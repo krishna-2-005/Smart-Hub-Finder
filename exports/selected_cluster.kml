@@ -1,0 +1,2201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Cluster - Kukatpally</name>
+    <open>1</open>
+    <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#16a34a'>Kukatpally</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster ID</b></td><td style='padding:2px 0'>kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Live hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center</b></td><td style='padding:2px 0'>17.4873592, 78.4034121</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center method</b></td><td style='padding:2px 0'>boundary_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Boundary area (km²)</b></td><td style='padding:2px 0'>26.2103</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service-area coverage (km²)</b></td><td style='padding:2px 0'>14.0011</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Max hub distance from center (km, straight-line)</b></td><td style='padding:2px 0'>3.277</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Source</b></td><td style='padding:2px 0'>attribute+boundary</td></tr></table></div>]]></description>
+    <LookAt>
+      <longitude>78.400021</longitude>
+      <latitude>17.487188</latitude>
+      <altitude>0</altitude>
+      <heading>0</heading>
+      <tilt>0</tilt>
+      <range>14616</range>
+      <altitudeMode>relativeToGround</altitudeMode>
+    </LookAt>
+    <Style id="cluster-kukatpally">
+      <LineStyle>
+        <color>f24aa316</color>
+        <width>2.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>2e4aa316</color>
+      </PolyStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <Style id="center-kukatpally-n">
+      <IconStyle>
+        <color>ff4aa316</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/target.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.9</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <Style id="center-kukatpally-h">
+      <IconStyle>
+        <color>ff4aa316</color>
+        <scale>1.375</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/target.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.9</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="center-kukatpally">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#center-kukatpally-n</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#center-kukatpally-h</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="hub-kukatpally-n">
+      <IconStyle>
+        <color>ff4aa316</color>
+        <scale>0.85</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <Style id="hub-kukatpally-h">
+      <IconStyle>
+        <color>ff4aa316</color>
+        <scale>1.0625</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0.9</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="hub-kukatpally">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#hub-kukatpally-n</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#hub-kukatpally-h</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="sa-kukatpally">
+      <LineStyle>
+        <color>b24aa316</color>
+        <width>1.0</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>1a4aa316</color>
+      </PolyStyle>
+      <BalloonStyle>
+        <text>$[description]</text>
+      </BalloonStyle>
+    </Style>
+    <Folder>
+      <name>Kukatpally (24 hubs)</name>
+      <visibility>1</visibility>
+      <open>1</open>
+      <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#16a34a'>Kukatpally</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster ID</b></td><td style='padding:2px 0'>kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Live hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center</b></td><td style='padding:2px 0'>17.4873592, 78.4034121</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center method</b></td><td style='padding:2px 0'>boundary_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Boundary area (km²)</b></td><td style='padding:2px 0'>26.2103</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service-area coverage (km²)</b></td><td style='padding:2px 0'>14.0011</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Max hub distance from center (km, straight-line)</b></td><td style='padding:2px 0'>3.277</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Source</b></td><td style='padding:2px 0'>attribute+boundary</td></tr></table></div>]]></description>
+      <Placemark>
+        <name>Kukatpally boundary</name>
+        <visibility>1</visibility>
+        <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#16a34a'>Kukatpally</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster ID</b></td><td style='padding:2px 0'>kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Live hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center</b></td><td style='padding:2px 0'>17.4873592, 78.4034121</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center method</b></td><td style='padding:2px 0'>boundary_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Boundary area (km²)</b></td><td style='padding:2px 0'>26.2103</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service-area coverage (km²)</b></td><td style='padding:2px 0'>14.0011</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Max hub distance from center (km, straight-line)</b></td><td style='padding:2px 0'>3.277</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Source</b></td><td style='padding:2px 0'>attribute+boundary</td></tr></table></div>]]></description>
+        <styleUrl>#cluster-kukatpally</styleUrl>
+        <ExtendedData>
+          <Data name="Cluster ID">
+            <value>kukatpally</value>
+          </Data>
+          <Data name="Hub count">
+            <value>24</value>
+          </Data>
+        </ExtendedData>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>78.3686076,17.4834511,0
+78.3808811,17.4747734,0
+78.3893351,17.4698814,0
+78.3962020,17.4637306,0
+78.4005798,17.4672408,0
+78.4049572,17.4702288,0
+78.4129033,17.4704794,0
+78.4176577,17.4698552,0
+78.4221544,17.4634180,0
+78.4327785,17.4648711,0
+78.4351447,17.4785842,0
+78.4217030,17.5109581,0
+78.3991633,17.5061671,0
+78.3777917,17.5081325,0
+78.3728593,17.4921563,0
+78.3648969,17.4837105,0
+78.3686076,17.4834511,0</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Kukatpally (24)</name>
+        <visibility>1</visibility>
+        <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#16a34a'>Kukatpally</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster ID</b></td><td style='padding:2px 0'>kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Live hubs</b></td><td style='padding:2px 0'>24</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center</b></td><td style='padding:2px 0'>17.4873592, 78.4034121</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Center method</b></td><td style='padding:2px 0'>boundary_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Boundary area (km²)</b></td><td style='padding:2px 0'>26.2103</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service-area coverage (km²)</b></td><td style='padding:2px 0'>14.0011</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Max hub distance from center (km, straight-line)</b></td><td style='padding:2px 0'>3.277</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Source</b></td><td style='padding:2px 0'>attribute+boundary</td></tr></table></div>]]></description>
+        <styleUrl>#center-kukatpally</styleUrl>
+        <ExtendedData>
+          <Data name="Cluster ID">
+            <value>kukatpally</value>
+          </Data>
+          <Data name="Hub count">
+            <value>24</value>
+          </Data>
+          <Data name="Center method">
+            <value>boundary_centroid</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>78.4034121,17.4873592,0</coordinates>
+        </Point>
+      </Placemark>
+      <Folder>
+        <name>Hubs</name>
+        <visibility>1</visibility>
+        <open>0</open>
+        <Placemark>
+          <name>Allwyn Colony</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc9002434985b · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Allwyn Colony</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434985b</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>allwyn_colony</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>allwyn_colony_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5031749</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4165672</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.9694</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc9002434985b</value>
+            </Data>
+            <Data name="Hub name">
+              <value>allwyn_colony</value>
+            </Data>
+            <Data name="Hub code">
+              <value>allwyn_colony_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.5031749</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4165672</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.9694</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4165672,17.5031749,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Balaji Nagar</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349859 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Balaji Nagar</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349859</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>balaji_nagar</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>balaji_nagar_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.484065</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4090534</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.7739</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349859</value>
+            </Data>
+            <Data name="Hub name">
+              <value>balaji_nagar</value>
+            </Data>
+            <Data name="Hub code">
+              <value>balaji_nagar_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.484065</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4090534</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.7739</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4090534,17.4840650,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Diamond Estates</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349820 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Diamond Estates</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349820</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>diamond_estates</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>diamond_estates_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4948236</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3824626</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.7591</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349820</value>
+            </Data>
+            <Data name="Hub name">
+              <value>diamond_estates</value>
+            </Data>
+            <Data name="Hub code">
+              <value>diamond_estates_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4948236</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3824626</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.7591</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3824626,17.4948236,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Eenadu Colony</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc9002434981f · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Eenadu Colony</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434981f</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>eenadu_colony</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>eenadu_colony_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4953035</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4085939</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5773</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc9002434981f</value>
+            </Data>
+            <Data name="Hub name">
+              <value>eenadu_colony</value>
+            </Data>
+            <Data name="Hub code">
+              <value>eenadu_colony_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4953035</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4085939</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5773</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4085939,17.4953035,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Indu Fortune</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc900243497fe · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Indu Fortune</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497fe</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>indu_fortune</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>indu_fortune_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4770169</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3824206</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.3167</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc900243497fe</value>
+            </Data>
+            <Data name="Hub name">
+              <value>indu_fortune</value>
+            </Data>
+            <Data name="Hub code">
+              <value>indu_fortune_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4770169</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3824206</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.3167</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3824206,17.4770169,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Jntu Road</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">69bc37716c4e72002539e0b9 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Jntu Road</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0b9</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>jntu_road</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>jntu_road_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4944835</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3900385</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.467</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>69bc37716c4e72002539e0b9</value>
+            </Data>
+            <Data name="Hub name">
+              <value>jntu_road</value>
+            </Data>
+            <Data name="Hub code">
+              <value>jntu_road_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4944835</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3900385</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.467</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3900385,17.4944835,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Kphb Phase15</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc900243498df · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kphb Phase15</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243498df</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kphb_phase15</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kphb_phase15_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.466471</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3973403</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4147</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc900243498df</value>
+            </Data>
+            <Data name="Hub name">
+              <value>kphb_phase15</value>
+            </Data>
+            <Data name="Hub code">
+              <value>kphb_phase15_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.466471</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3973403</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.4147</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3973403,17.4664710,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Kphb Phase2</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">69bc37716c4e72002539e0b8 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kphb Phase2</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0b8</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kphb_phase2</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kphb_phase2_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4867282</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3956427</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.6692</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>69bc37716c4e72002539e0b8</value>
+            </Data>
+            <Data name="Hub name">
+              <value>kphb_phase2</value>
+            </Data>
+            <Data name="Hub code">
+              <value>kphb_phase2_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4867282</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3956427</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.6692</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3956427,17.4867282,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Kphb Phase6</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">69bc37716c4e72002539e0b7 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kphb Phase6</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0b7</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kphb_phase6</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kphb_phase6_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4888729</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3876901</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5517</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>69bc37716c4e72002539e0b7</value>
+            </Data>
+            <Data name="Hub name">
+              <value>kphb_phase6</value>
+            </Data>
+            <Data name="Hub code">
+              <value>kphb_phase6_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4888729</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3876901</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5517</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3876901,17.4888729,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Kukatpally Lake</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349858 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kukatpally Lake</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349858</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kukatpally_lake</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kukatpally_lake_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4917423</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4147399</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4232</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349858</value>
+            </Data>
+            <Data name="Hub name">
+              <value>kukatpally_lake</value>
+            </Data>
+            <Data name="Hub code">
+              <value>kukatpally_lake_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4917423</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4147399</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.4232</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4147399,17.4917423,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Lodha Bellezza</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc900243497cd · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Lodha Bellezza</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497cd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>lodha_bellezza</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>lodha_bellezza_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4734671</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3896826</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5414</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc900243497cd</value>
+            </Data>
+            <Data name="Hub name">
+              <value>lodha_bellezza</value>
+            </Data>
+            <Data name="Hub code">
+              <value>lodha_bellezza_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4734671</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3896826</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5414</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3896826,17.4734671,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Malaysian Township</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc900243497fc · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Malaysian Township</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497fc</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>malaysian_township</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>malaysian_township_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4800655</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3922853</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4084</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc900243497fc</value>
+            </Data>
+            <Data name="Hub name">
+              <value>malaysian_township</value>
+            </Data>
+            <Data name="Hub code">
+              <value>malaysian_township_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4800655</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3922853</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.4084</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3922853,17.4800655,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Meridian Enclave</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">6a036c3a20c29a0025e7cc2d · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Meridian Enclave</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>6a036c3a20c29a0025e7cc2d</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>meridian_enclave</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>meridian_enclave_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5071651</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3848382</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.3325</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>6a036c3a20c29a0025e7cc2d</value>
+            </Data>
+            <Data name="Hub name">
+              <value>meridian_enclave</value>
+            </Data>
+            <Data name="Hub code">
+              <value>meridian_enclave_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.5071651</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3848382</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.3325</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3848382,17.5071651,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Moosapet</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349889 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Moosapet</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349889</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>moosapet</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>moosapet_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>3. Low PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.467102</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.424347</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.765</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349889</value>
+            </Data>
+            <Data name="Hub name">
+              <value>moosapet</value>
+            </Data>
+            <Data name="Hub code">
+              <value>moosapet_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>3. Low PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.467102</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.424347</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.765</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4243470,17.4671020,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Netaji Rd</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349800 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Netaji Rd</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349800</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>netaji_rd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>netaji_rd_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4828574</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.373777</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.3044</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349800</value>
+            </Data>
+            <Data name="Hub name">
+              <value>netaji_rd</value>
+            </Data>
+            <Data name="Hub code">
+              <value>netaji_rd_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4828574</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.373777</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.3044</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3737770,17.4828574,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Radha Krishna Rd</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc900243497cf · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Radha Krishna Rd</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497cf</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>radha_krishna_rd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>radha_krishna_rd_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4847019</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3796722</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.6395</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc900243497cf</value>
+            </Data>
+            <Data name="Hub name">
+              <value>radha_krishna_rd</value>
+            </Data>
+            <Data name="Hub code">
+              <value>radha_krishna_rd_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4847019</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3796722</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.6395</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3796722,17.4847019,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Reliance Mcr Arcade</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">6a2ba19548d99f00249dc0e8 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Reliance Mcr Arcade</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>6a2ba19548d99f00249dc0e8</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>reliance_mcr_arcade</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>reliance_mcr_arcade_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4946118</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4195406</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5649</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>6a2ba19548d99f00249dc0e8</value>
+            </Data>
+            <Data name="Hub name">
+              <value>reliance_mcr_arcade</value>
+            </Data>
+            <Data name="Hub code">
+              <value>reliance_mcr_arcade_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4946118</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4195406</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5649</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4195406,17.4946118,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Rythubazar Road</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">69bc37716c4e72002539e0ba · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Rythubazar Road</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0ba</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>rythubazar_road</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>rythubazar_road_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4921088</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3982802</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5695</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>69bc37716c4e72002539e0ba</value>
+            </Data>
+            <Data name="Hub name">
+              <value>rythubazar_road</value>
+            </Data>
+            <Data name="Hub code">
+              <value>rythubazar_road_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4921088</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3982802</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5695</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3982802,17.4921088,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Sangeetha Nagar</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc9002434985a · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Sangeetha Nagar</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434985a</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>sangeetha_nagarã¢</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>sangeetha_nagarã¢_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.484965</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4208121</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>1.146</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc9002434985a</value>
+            </Data>
+            <Data name="Hub name">
+              <value>sangeetha_nagarã¢</value>
+            </Data>
+            <Data name="Hub code">
+              <value>sangeetha_nagarã¢_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.484965</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4208121</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>1.146</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4208121,17.4849650,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Seven Hills</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349822 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Seven Hills</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349822</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>seven_hills</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>seven_hills_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5016699</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3931645</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5601</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349822</value>
+            </Data>
+            <Data name="Hub name">
+              <value>seven_hills</value>
+            </Data>
+            <Data name="Hub code">
+              <value>seven_hills_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.5016699</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3931645</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5601</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3931645,17.5016699,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Smr Vinay Rd</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc900243497db · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Smr Vinay Rd</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497db</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>smr_vinay_rd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>smr_vinay_rd_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4873564</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3725161</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4316</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc900243497db</value>
+            </Data>
+            <Data name="Hub name">
+              <value>smr_vinay_rd</value>
+            </Data>
+            <Data name="Hub code">
+              <value>smr_vinay_rd_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4873564</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3725161</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.4316</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3725161,17.4873564,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Swanlake Apartments</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc90024349868 · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Swanlake Apartments</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349868</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>swanlake_apartments</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>swanlake_apartments_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>3. Low PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4741822</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.418479</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.8218</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc90024349868</value>
+            </Data>
+            <Data name="Hub name">
+              <value>swanlake_apartments</value>
+            </Data>
+            <Data name="Hub code">
+              <value>swanlake_apartments_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>3. Low PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4741822</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.418479</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.8218</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4184790,17.4741822,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Tulasi Vanam</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">68efcc5d579bc9002434981e · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Tulasi Vanam</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434981e</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>tulasi_vanam</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>tulasi_vanam_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4990447</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4064596</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5113</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>68efcc5d579bc9002434981e</value>
+            </Data>
+            <Data name="Hub name">
+              <value>tulasi_vanam</value>
+            </Data>
+            <Data name="Hub code">
+              <value>tulasi_vanam_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Priority">
+              <value>P0</value>
+            </Data>
+            <Data name="Demand level">
+              <value>2. Medium PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.4990447</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.4064596</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.5113</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.4064596,17.4990447,0</coordinates>
+          </Point>
+        </Placemark>
+        <Placemark>
+          <name>Vertex Prestige</name>
+          <visibility>1</visibility>
+          <Snippet maxLines="1">6a036c3a20c29a0025e7cc3e · Live</Snippet>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Vertex Prestige</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>6a036c3a20c29a0025e7cc3e</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>vertex_prestige</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>vertex_prestige_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5024625</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3863452</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4824</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#hub-kukatpally</styleUrl>
+          <ExtendedData>
+            <Data name="Hub ID">
+              <value>6a036c3a20c29a0025e7cc3e</value>
+            </Data>
+            <Data name="Hub name">
+              <value>vertex_prestige</value>
+            </Data>
+            <Data name="Hub code">
+              <value>vertex_prestige_city_hyderabad_v2_insta_maids</value>
+            </Data>
+            <Data name="Cluster">
+              <value>Kukatpally</value>
+            </Data>
+            <Data name="Region / Line">
+              <value>northern_hyd</value>
+            </Data>
+            <Data name="Status">
+              <value>Live</value>
+            </Data>
+            <Data name="Cluster mapping">
+              <value>competitive_cluster</value>
+            </Data>
+            <Data name="Demand level">
+              <value>1. High PMF</value>
+            </Data>
+            <Data name="Latitude">
+              <value>17.5024625</value>
+            </Data>
+            <Data name="Longitude">
+              <value>78.3863452</value>
+            </Data>
+            <Data name="Location method">
+              <value>service_area_centroid</value>
+            </Data>
+            <Data name="Service area (km²)">
+              <value>0.4824</value>
+            </Data>
+            <Data name="Original KML folder">
+              <value>IH Hyd - Competition Intelligence - Sheet44.csv</value>
+            </Data>
+          </ExtendedData>
+          <Point>
+            <coordinates>78.3863452,17.5024625,0</coordinates>
+          </Point>
+        </Placemark>
+      </Folder>
+      <Folder>
+        <name>Hub service areas</name>
+        <visibility>0</visibility>
+        <open>0</open>
+        <Placemark>
+          <name>Allwyn Colony service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Allwyn Colony</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434985b</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>allwyn_colony</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>allwyn_colony_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5031749</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4165672</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.9694</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4133490,17.5076880,0
+78.4123910,17.5072560,0
+78.4112570,17.5028080,0
+78.4112830,17.5023160,0
+78.4113690,17.5020040,0
+78.4119430,17.4987460,0
+78.4158970,17.5004290,0
+78.4161380,17.4998860,0
+78.4156450,17.4992310,0
+78.4171630,17.4981780,0
+78.4211650,17.4982290,0
+78.4209390,17.5079590,0
+78.4163800,17.5075860,0
+78.4133490,17.5076880,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Balaji Nagar service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Balaji Nagar</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349859</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>balaji_nagar</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>balaji_nagar_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.484065</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4090534</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.7739</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4064710,17.4912450,0
+78.4039390,17.4842450,0
+78.4075440,17.4801930,0
+78.4099900,17.4799470,0
+78.4162980,17.4800700,0
+78.4168130,17.4804790,0
+78.4162500,17.4812500,0
+78.4122210,17.4835490,0
+78.4093890,17.4879290,0
+78.4064710,17.4912450,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Diamond Estates service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Diamond Estates</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349820</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>diamond_estates</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>diamond_estates_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4948236</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3824626</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.7591</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3782630,17.4976480,0
+78.3778120,17.4947010,0
+78.3776400,17.4940870,0
+78.3807870,17.4934940,0
+78.3785900,17.4900760,0
+78.3823500,17.4883980,0
+78.3832190,17.4909050,0
+78.3871350,17.4954380,0
+78.3878440,17.4984460,0
+78.3826080,17.4992440,0
+78.3782630,17.4976480,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Eenadu Colony service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Eenadu Colony</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434981f</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>eenadu_colony</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>eenadu_colony_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4953035</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4085939</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5773</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4013420,17.4943820,0
+78.4076810,17.4908950,0
+78.4145600,17.4978610,0
+78.4160080,17.4999440,0
+78.4158040,17.5002350,0
+78.4123280,17.4986390,0
+78.4095920,17.4978920,0
+78.4070710,17.4969610,0
+78.4013420,17.4943820,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Indu Fortune service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Indu Fortune</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497fe</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>indu_fortune</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>indu_fortune_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4770169</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3824206</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.3167</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3785000,17.4775240,0
+78.3811900,17.4753500,0
+78.3835290,17.4741220,0
+78.3847090,17.4731810,0
+78.3852030,17.4755550,0
+78.3856960,17.4778680,0
+78.3842800,17.4786460,0
+78.3813610,17.4799350,0
+78.3810560,17.4801040,0
+78.3805870,17.4790070,0
+78.3792160,17.4794240,0
+78.3790650,17.4789330,0
+78.3785000,17.4775240,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Jntu Road service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Jntu Road</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0b9</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>jntu_road</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>jntu_road_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4944835</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3900385</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.467</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3844900,17.4922220,0
+78.3852950,17.4915260,0
+78.3857300,17.4913750,0
+78.3865660,17.4912500,0
+78.3874510,17.4910550,0
+78.3885350,17.4922730,0
+78.3897260,17.4934290,0
+78.3927510,17.4913220,0
+78.3936630,17.4933270,0
+78.3947680,17.4961210,0
+78.3927080,17.4969700,0
+78.3914740,17.4980240,0
+78.3899080,17.4982390,0
+78.3884270,17.4964890,0
+78.3869470,17.4949030,0
+78.3854450,17.4932860,0
+78.3844900,17.4922220,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Kphb Phase15 service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kphb Phase15</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243498df</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kphb_phase15</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kphb_phase15_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.466471</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3973403</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4147</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3936530,17.4695460,0
+78.3936960,17.4689940,0
+78.3937380,17.4657600,0
+78.3956270,17.4636820,0
+78.3991460,17.4631600,0
+78.4022040,17.4691060,0
+78.3987380,17.4680110,0
+78.3986740,17.4690960,0
+78.3959920,17.4687280,0
+78.3948180,17.4691650,0
+78.3937170,17.4696360,0
+78.3936530,17.4695460,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Kphb Phase2 service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kphb Phase2</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0b8</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kphb_phase2</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kphb_phase2_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4867282</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3956427</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.6692</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3930700,17.4913440,0
+78.3904390,17.4847030,0
+78.3944730,17.4828200,0
+78.3987430,17.4842930,0
+78.4006520,17.4850100,0
+78.4015330,17.4876300,0
+78.3997680,17.4884080,0
+78.3992910,17.4885740,0
+78.3987870,17.4887920,0
+78.3972970,17.4894550,0
+78.3973020,17.4896670,0
+78.3965570,17.4899400,0
+78.3942020,17.4908350,0
+78.3937350,17.4910450,0
+78.3930700,17.4913440,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Kphb Phase6 service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kphb Phase6</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0b7</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kphb_phase6</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kphb_phase6_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4888729</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3876901</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5517</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3888630,17.4921890,0
+78.3885860,17.4921690,0
+78.3874680,17.4908690,0
+78.3870550,17.4910690,0
+78.3854480,17.4912660,0
+78.3851990,17.4914680,0
+78.3844160,17.4921230,0
+78.3833380,17.4908590,0
+78.3823400,17.4881680,0
+78.3900010,17.4846470,0
+78.3914010,17.4879170,0
+78.3925540,17.4911040,0
+78.3908480,17.4917650,0
+78.3899360,17.4916320,0
+78.3888630,17.4921890,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Kukatpally Lake service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Kukatpally Lake</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349858</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>kukatpally_lake</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>kukatpally_lake_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4917423</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4147399</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4232</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4113840,17.4916600,0
+78.4109050,17.4912740,0
+78.4109740,17.4906220,0
+78.4127050,17.4897450,0
+78.4141990,17.4892440,0
+78.4142020,17.4889560,0
+78.4141820,17.4886480,0
+78.4144400,17.4887910,0
+78.4144920,17.4884810,0
+78.4162770,17.4872720,0
+78.4184370,17.4920370,0
+78.4176290,17.4923800,0
+78.4174420,17.4928180,0
+78.4174110,17.4941010,0
+78.4164300,17.4941220,0
+78.4153440,17.4944650,0
+78.4134980,17.4962860,0
+78.4130480,17.4957750,0
+78.4113840,17.4916600,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Lodha Bellezza service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Lodha Bellezza</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497cd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>lodha_bellezza</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>lodha_bellezza_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4734671</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3896826</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5414</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3903760,17.4768000,0
+78.3902900,17.4771680,0
+78.3900760,17.4770250,0
+78.3891420,17.4759960,0
+78.3855700,17.4766660,0
+78.3847970,17.4732220,0
+78.3865890,17.4717260,0
+78.3871790,17.4717640,0
+78.3918140,17.4694720,0
+78.3935170,17.4685200,0
+78.3935360,17.4696770,0
+78.3923070,17.4703320,0
+78.3943240,17.4748760,0
+78.3928120,17.4758070,0
+78.3921090,17.4756890,0
+78.3914700,17.4760830,0
+78.3909770,17.4767580,0
+78.3903760,17.4768000,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Malaysian Township service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Malaysian Township</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497fc</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>malaysian_township</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>malaysian_township_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4800655</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3922853</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4084</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3903760,17.4771990,0
+78.3905180,17.4768470,0
+78.3911190,17.4769080,0
+78.3916980,17.4760280,0
+78.3922130,17.4758440,0
+78.3953680,17.4775020,0
+78.3955820,17.4777680,0
+78.3943590,17.4822300,0
+78.3935650,17.4829260,0
+78.3902390,17.4844610,0
+78.3898960,17.4839280,0
+78.3893590,17.4824550,0
+78.3894880,17.4811660,0
+78.3899820,17.4799170,0
+78.3904970,17.4784020,0
+78.3903460,17.4776040,0
+78.3903760,17.4771990,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Meridian Enclave service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Meridian Enclave</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>6a036c3a20c29a0025e7cc2d</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>meridian_enclave</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>meridian_enclave_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5071651</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3848382</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.3325</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3854340,17.5050620,0
+78.3859970,17.5049900,0
+78.3865170,17.5051380,0
+78.3867640,17.5053020,0
+78.3868340,17.5055430,0
+78.3876280,17.5060130,0
+78.3883460,17.5061000,0
+78.3892930,17.5092510,0
+78.3812500,17.5087500,0
+78.3807450,17.5051540,0
+78.3814860,17.5050920,0
+78.3822360,17.5048160,0
+78.3825050,17.5055430,0
+78.3828800,17.5055020,0
+78.3834440,17.5053990,0
+78.3843310,17.5052100,0
+78.3851710,17.5049950,0
+78.3854340,17.5050620,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Moosapet service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Moosapet</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349889</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>moosapet</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>moosapet_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>3. Low PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.467102</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.424347</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.765</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4259040,17.4716490,0
+78.4253460,17.4710680,0
+78.4235280,17.4708060,0
+78.4233290,17.4712290,0
+78.4218220,17.4707080,0
+78.4182330,17.4691210,0
+78.4182120,17.4665220,0
+78.4220100,17.4653140,0
+78.4232110,17.4651500,0
+78.4234260,17.4638000,0
+78.4258720,17.4628170,0
+78.4286620,17.4626530,0
+78.4299060,17.4645360,0
+78.4284040,17.4680570,0
+78.4259040,17.4716490,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Netaji Rd service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Netaji Rd</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349800</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>netaji_rd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>netaji_rd_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4828574</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.373777</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.3044</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3763300,17.4846420,0
+78.3762490,17.4847850,0
+78.3758150,17.4849080,0
+78.3753260,17.4850000,0
+78.3749690,17.4850260,0
+78.3745040,17.4851000,0
+78.3741680,17.4852560,0
+78.3734170,17.4854380,0
+78.3734520,17.4855830,0
+78.3731890,17.4857130,0
+78.3729440,17.4858190,0
+78.3727180,17.4854690,0
+78.3717350,17.4844540,0
+78.3707100,17.4851830,0
+78.3697180,17.4850280,0
+78.3697820,17.4840830,0
+78.3703300,17.4838810,0
+78.3703520,17.4824200,0
+78.3709620,17.4823300,0
+78.3734500,17.4812510,0
+78.3754880,17.4794020,0
+78.3767860,17.4780950,0
+78.3770810,17.4782910,0
+78.3772260,17.4786100,0
+78.3757240,17.4808680,0
+78.3766400,17.4839970,0
+78.3768040,17.4845410,0
+78.3767700,17.4846410,0
+78.3766620,17.4846540,0
+78.3765820,17.4846080,0
+78.3765210,17.4846280,0
+78.3764680,17.4845690,0
+78.3763300,17.4846420,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Radha Krishna Rd service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Radha Krishna Rd</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497cf</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>radha_krishna_rd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>radha_krishna_rd_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4847019</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3796722</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.6395</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3758054,17.4806851,0
+78.3773794,17.4790221,0
+78.3778704,17.4796111,0
+78.3787724,17.4793801,0
+78.3794134,17.4810581,0
+78.3810494,17.4805001,0
+78.3820194,17.4834421,0
+78.3814504,17.4840991,0
+78.3841644,17.4841991,0
+78.3841274,17.4851981,0
+78.3846984,17.4868281,0
+78.3819734,17.4881411,0
+78.3816764,17.4882751,0
+78.3808604,17.4886841,0
+78.3799164,17.4890731,0
+78.3783534,17.4899911,0
+78.3772904,17.4882161,0
+78.3767844,17.4886931,0
+78.3768354,17.4875691,0
+78.3768194,17.4869311,0
+78.3768674,17.4857411,0
+78.3769644,17.4844811,0
+78.3763094,17.4823831,0
+78.3758054,17.4806851,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Reliance Mcr Arcade service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Reliance Mcr Arcade</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>6a2ba19548d99f00249dc0e8</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>reliance_mcr_arcade</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>reliance_mcr_arcade_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4946118</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4195406</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5649</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4135140,17.4964930,0
+78.4150300,17.4949200,0
+78.4161110,17.4954590,0
+78.4172870,17.4960600,0
+78.4177840,17.4955680,0
+78.4175200,17.4946770,0
+78.4177630,17.4944580,0
+78.4177700,17.4938720,0
+78.4177720,17.4933990,0
+78.4191100,17.4921040,0
+78.4187440,17.4910240,0
+78.4190060,17.4905500,0
+78.4188600,17.4900970,0
+78.4198620,17.4895580,0
+78.4202720,17.4894130,0
+78.4205450,17.4894440,0
+78.4206630,17.4898890,0
+78.4214300,17.4903800,0
+78.4220360,17.4912330,0
+78.4239600,17.4920020,0
+78.4241570,17.4922140,0
+78.4245830,17.4934160,0
+78.4240870,17.4943600,0
+78.4235050,17.4951400,0
+78.4217940,17.4959850,0
+78.4202060,17.4981390,0
+78.4171270,17.4980290,0
+78.4156220,17.4991240,0
+78.4146000,17.4977930,0
+78.4135140,17.4964930,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Rythubazar Road service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Rythubazar Road</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>69bc37716c4e72002539e0ba</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>rythubazar_road</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>rythubazar_road_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4921088</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3982802</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5695</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3932400,17.4916920,0
+78.3932130,17.4914360,0
+78.3935650,17.4911750,0
+78.3942390,17.4908450,0
+78.3946030,17.4907550,0
+78.3962230,17.4901880,0
+78.3971840,17.4898200,0
+78.3974490,17.4896920,0
+78.3974460,17.4895020,0
+78.3989800,17.4888370,0
+78.4016300,17.4877830,0
+78.4030140,17.4927250,0
+78.4031860,17.4928280,0
+78.4017480,17.4936870,0
+78.3990550,17.4948840,0
+78.3968450,17.4956620,0
+78.3950100,17.4960410,0
+78.3947530,17.4953450,0
+78.3940020,17.4936160,0
+78.3932400,17.4916920,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Sangeetha Nagar service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Sangeetha Nagar</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434985a</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>sangeetha_nagarã¢</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>sangeetha_nagarã¢_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.484965</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4208121</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>1.146</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4125090,17.4849740,0
+78.4191900,17.4792180,0
+78.4274300,17.4829840,0
+78.4244690,17.4915390,0
+78.4125090,17.4849740,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Seven Hills service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Seven Hills</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349822</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>seven_hills</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>seven_hills_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5016699</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3931645</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5601</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3898000,17.4988780,0
+78.3917740,17.4984900,0
+78.3936620,17.4972000,0
+78.3948640,17.4966890,0
+78.3962500,17.5012500,0
+78.3969670,17.5052840,0
+78.3912370,17.5056520,0
+78.3910230,17.5038310,0
+78.3909160,17.5032170,0
+78.3889410,17.5030330,0
+78.3898000,17.4988780,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Smr Vinay Rd service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Smr Vinay Rd</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc900243497db</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>smr_vinay_rd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>smr_vinay_rd_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4873564</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3725161</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4316</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3699640,17.4904840,0
+78.3684400,17.4872100,0
+78.3676040,17.4852600,0
+78.3710370,17.4852760,0
+78.3717930,17.4846670,0
+78.3722790,17.4851820,0
+78.3725060,17.4854360,0
+78.3726570,17.4857260,0
+78.3727820,17.4856880,0
+78.3729220,17.4858800,0
+78.3730280,17.4858430,0
+78.3733980,17.4856960,0
+78.3734820,17.4856440,0
+78.3734840,17.4854750,0
+78.3737180,17.4854410,0
+78.3747920,17.4852040,0
+78.3769250,17.4847180,0
+78.3768190,17.4870570,0
+78.3767720,17.4886440,0
+78.3730220,17.4898090,0
+78.3722600,17.4901360,0
+78.3721180,17.4901020,0
+78.3721140,17.4899740,0
+78.3714440,17.4902180,0
+78.3712080,17.4899620,0
+78.3699640,17.4904840,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Swanlake Apartments service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Swanlake Apartments</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc90024349868</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>swanlake_apartments</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>swanlake_apartments_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>3. Low PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4741822</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.418479</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.8218</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.4182080,17.4795990,0
+78.4166000,17.4775570,0
+78.4154630,17.4773160,0
+78.4136200,17.4760560,0
+78.4131480,17.4714510,0
+78.4153790,17.4705300,0
+78.4181100,17.4703350,0
+78.4192040,17.4704630,0
+78.4199340,17.4704630,0
+78.4207240,17.4711850,0
+78.4215270,17.4709390,0
+78.4229750,17.4714300,0
+78.4246920,17.4734770,0
+78.4235330,17.4753600,0
+78.4196710,17.4784300,0
+78.4182080,17.4795990,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Tulasi Vanam service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Tulasi Vanam</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>68efcc5d579bc9002434981e</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>tulasi_vanam</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>tulasi_vanam_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Priority</b></td><td style='padding:2px 0'>P0</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>2. Medium PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.4990447</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.4064596</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.5113</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3997520,17.4950340,0
+78.4011570,17.4944200,0
+78.4079220,17.4975100,0
+78.4118110,17.4986970,0
+78.4111460,17.5018080,0
+78.4105020,17.5035480,0
+78.4079060,17.5036910,0
+78.4082490,17.4994340,0
+78.4055670,17.4993520,0
+78.4057380,17.5008870,0
+78.4045580,17.5010710,0
+78.4029060,17.5006210,0
+78.4028630,17.4994750,0
+78.4019620,17.4994340,0
+78.4019190,17.4986970,0
+78.4019940,17.4960060,0
+78.3997520,17.4950340,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+        <Placemark>
+          <name>Vertex Prestige service area</name>
+          <visibility>0</visibility>
+          <description><![CDATA[<div style='font-family:Arial,sans-serif;font-size:12px;min-width:240px'><h3 style='margin:0 0 6px;color:#1e3a8a'>Vertex Prestige</h3><table><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub ID</b></td><td style='padding:2px 0'>6a036c3a20c29a0025e7cc3e</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub name</b></td><td style='padding:2px 0'>vertex_prestige</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Hub code</b></td><td style='padding:2px 0'>vertex_prestige_city_hyderabad_v2_insta_maids</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster</b></td><td style='padding:2px 0'>Kukatpally</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Region / Line</b></td><td style='padding:2px 0'>northern_hyd</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Status</b></td><td style='padding:2px 0'>Live</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Cluster mapping</b></td><td style='padding:2px 0'>competitive_cluster</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Demand level</b></td><td style='padding:2px 0'>1. High PMF</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Latitude</b></td><td style='padding:2px 0'>17.5024625</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Longitude</b></td><td style='padding:2px 0'>78.3863452</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Location method</b></td><td style='padding:2px 0'>service_area_centroid</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Service area (km²)</b></td><td style='padding:2px 0'>0.4824</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Original KML folder</b></td><td style='padding:2px 0'>IH Hyd - Competition Intelligence - Sheet44.csv</td></tr><tr><td style='padding:2px 8px 2px 0;color:#475569;white-space:nowrap'><b>Note</b></td><td style='padding:2px 0'>Hub point inferred from its service-area polygon (no explicit hub point in source KML)</td></tr></table></div>]]></description>
+          <styleUrl>#sa-kukatpally</styleUrl>
+          <Polygon>
+            <tessellate>1</tessellate>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates>78.3820160,17.5044690,0
+78.3819730,17.5040600,0
+78.3833030,17.5036910,0
+78.3828740,17.5013380,0
+78.3829170,17.4995990,0
+78.3852990,17.4993320,0
+78.3895900,17.4989230,0
+78.3888180,17.5019320,0
+78.3884740,17.5030370,0
+78.3906850,17.5034250,0
+78.3910490,17.5050010,0
+78.3884530,17.5053490,0
+78.3884960,17.5060650,0
+78.3874280,17.5057680,0
+78.3863610,17.5049450,0
+78.3852290,17.5049190,0
+78.3825520,17.5054670,0
+78.3821510,17.5044480,0
+78.3820160,17.5044690,0</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+    </Folder>
+  </Document>
+</kml>

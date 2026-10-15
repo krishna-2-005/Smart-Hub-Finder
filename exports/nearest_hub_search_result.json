@@ -1,0 +1,435 @@
+{
+  "result_id": "4cb8031703f5",
+  "created_at": "2026-10-15T05:05:14+00:00",
+  "status": "ok",
+  "message": "Nearest live hub by road distance: Kukatpally Lake (0.91 km, 2 min).",
+  "query": {
+    "latitude": 17.4849,
+    "longitude": 78.4138,
+    "cluster_selection": "auto",
+    "travel_mode": "driving",
+    "ranking": "distance",
+    "max_radius_km": 15.0,
+    "max_candidates": 60,
+    "live_only": true,
+    "top_n": 5,
+    "source": "manual"
+  },
+  "location": {
+    "cluster_id": "kukatpally",
+    "cluster_name": "Kukatpally",
+    "detection": "inside_cluster_boundary",
+    "detection_label": "Inside the Kukatpally cluster boundary",
+    "containing_clusters": [
+      {
+        "cluster_id": "kukatpally",
+        "name": "Kukatpally"
+      }
+    ],
+    "inside_service_area_of": {
+      "hub_id": "68efcc5d579bc9002434985a",
+      "name": "sangeetha_nagar\u00e3\u00a2",
+      "display_name": "Sangeetha Nagar",
+      "cluster_id": "kukatpally"
+    },
+    "within_coverage": true,
+    "nearest_cluster": null
+  },
+  "scope": {
+    "selection": "auto",
+    "cluster_ids": [
+      "kukatpally"
+    ],
+    "description": "Auto-detected cluster: Kukatpally",
+    "fallback": false
+  },
+  "provider": {
+    "name": "osrm",
+    "label": "OSRM (OpenStreetMap road network)"
+  },
+  "evaluation": {
+    "candidates_in_scope": 24,
+    "excluded_inactive": 0,
+    "eligible": 24,
+    "candidates_within_radius": 24,
+    "candidates_evaluated": 24,
+    "matrix_requests": 1,
+    "strategy": "exhaustive",
+    "guaranteed": true,
+    "explanation": "All 24 eligible hubs within the radius were evaluated by road.",
+    "radius_note": "The 15 km search radius is a straight-line pre-filter only.",
+    "origin_snap_m": 6.0,
+    "outside_radius_ruled_out": true
+  },
+  "nearest": {
+    "rank": 1,
+    "hub_id": "68efcc5d579bc90024349858",
+    "name": "kukatpally_lake",
+    "display_name": "Kukatpally Lake",
+    "cluster_id": "kukatpally",
+    "cluster_name": "Kukatpally",
+    "status": "Live",
+    "latitude": 17.4917423,
+    "longitude": 78.4147399,
+    "location_method": "service_area_centroid",
+    "straight_line_km": 0.767,
+    "road_distance_m": 913.5,
+    "road_distance_km": 0.913,
+    "duration_s": 111.4,
+    "duration_min": 1.9,
+    "snap_distance_m": 6.5
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "hub_id": "68efcc5d579bc90024349858",
+      "name": "kukatpally_lake",
+      "display_name": "Kukatpally Lake",
+      "cluster_id": "kukatpally",
+      "cluster_name": "Kukatpally",
+      "status": "Live",
+      "latitude": 17.4917423,
+      "longitude": 78.4147399,
+      "location_method": "service_area_centroid",
+      "straight_line_km": 0.767,
+      "road_distance_m": 913.5,
+      "road_distance_km": 0.913,
+      "duration_s": 111.4,
+      "duration_min": 1.9,
+      "snap_distance_m": 6.5
+    },
+    {
+      "rank": 2,
+      "hub_id": "68efcc5d579bc9002434985a",
+      "name": "sangeetha_nagar\u00e3\u00a2",
+      "display_name": "Sangeetha Nagar",
+      "cluster_id": "kukatpally",
+      "cluster_name": "Kukatpally",
+      "status": "Live",
+      "latitude": 17.484965,
+      "longitude": 78.4208121,
+      "location_method": "service_area_centroid",
+      "straight_line_km": 0.744,
+      "road_distance_m": 1090.3,
+      "road_distance_km": 1.09,
+      "duration_s": 178.3,
+      "duration_min": 3.0,
+      "snap_distance_m": 1.9
+    },
+    {
+      "rank": 3,
+      "hub_id": "68efcc5d579bc90024349859",
+      "name": "balaji_nagar",
+      "display_name": "Balaji Nagar",
+      "cluster_id": "kukatpally",
+      "cluster_name": "Kukatpally",
+      "status": "Live",
+      "latitude": 17.484065,
+      "longitude": 78.4090534,
+      "location_method": "service_area_centroid",
+      "straight_line_km": 0.512,
+      "road_distance_m": 1163.7,
+      "road_distance_km": 1.164,
+      "duration_s": 133.2,
+      "duration_min": 2.2,
+      "snap_distance_m": 15.0
+    },
+    {
+      "rank": 4,
+      "hub_id": "68efcc5d579bc9002434981f",
+      "name": "eenadu_colony",
+      "display_name": "Eenadu Colony",
+      "cluster_id": "kukatpally",
+      "cluster_name": "Kukatpally",
+      "status": "Live",
+      "latitude": 17.4953035,
+      "longitude": 78.4085939,
+      "location_method": "service_area_centroid",
+      "straight_line_km": 1.282,
+      "road_distance_m": 1833.1,
+      "road_distance_km": 1.833,
+      "duration_s": 223.2,
+      "duration_min": 3.7,
+      "snap_distance_m": 20.5
+    },
+    {
+      "rank": 5,
+      "hub_id": "6a2ba19548d99f00249dc0e8",
+      "name": "reliance_mcr_arcade",
+      "display_name": "Reliance Mcr Arcade",
+      "cluster_id": "kukatpally",
+      "cluster_name": "Kukatpally",
+      "status": "Live",
+      "latitude": 17.4946118,
+      "longitude": 78.4195406,
+      "location_method": "service_area_centroid",
+      "straight_line_km": 1.24,
+      "road_distance_m": 1948.4,
+      "road_distance_km": 1.948,
+      "duration_s": 202.2,
+      "duration_min": 3.4,
+      "snap_distance_m": 19.3
+    }
+  ],
+  "unreachable": [],
+  "route": {
+    "provider": "osrm",
+    "provider_label": "OSRM (OpenStreetMap road network)",
+    "travel_mode": "driving",
+    "distance_m": 913.5,
+    "duration_s": 111.4,
+    "geometry": [
+      [
+        17.484858,
+        78.413764
+      ],
+      [
+        17.484917,
+        78.413688
+      ],
+      [
+        17.484966,
+        78.413593
+      ],
+      [
+        17.485035,
+        78.413296
+      ],
+      [
+        17.485059,
+        78.413259
+      ],
+      [
+        17.485097,
+        78.413237
+      ],
+      [
+        17.48545,
+        78.413342
+      ],
+      [
+        17.485743,
+        78.413399
+      ],
+      [
+        17.48582,
+        78.413164
+      ],
+      [
+        17.485963,
+        78.413205
+      ],
+      [
+        17.486418,
+        78.413235
+      ],
+      [
+        17.486728,
+        78.413265
+      ],
+      [
+        17.486815,
+        78.413273
+      ],
+      [
+        17.487127,
+        78.413291
+      ],
+      [
+        17.48722,
+        78.413433
+      ],
+      [
+        17.487345,
+        78.413577
+      ],
+      [
+        17.487464,
+        78.413624
+      ],
+      [
+        17.487609,
+        78.413685
+      ],
+      [
+        17.487875,
+        78.413797
+      ],
+      [
+        17.487961,
+        78.413827
+      ],
+      [
+        17.488306,
+        78.413934
+      ],
+      [
+        17.488375,
+        78.413939
+      ],
+      [
+        17.488759,
+        78.414025
+      ],
+      [
+        17.489251,
+        78.414136
+      ],
+      [
+        17.489389,
+        78.414164
+      ],
+      [
+        17.489817,
+        78.414171
+      ],
+      [
+        17.489963,
+        78.414151
+      ],
+      [
+        17.490014,
+        78.414086
+      ],
+      [
+        17.490101,
+        78.414021
+      ],
+      [
+        17.490308,
+        78.413926
+      ],
+      [
+        17.490354,
+        78.413911
+      ],
+      [
+        17.491134,
+        78.414177
+      ],
+      [
+        17.491524,
+        78.414315
+      ],
+      [
+        17.491896,
+        78.414444
+      ],
+      [
+        17.491798,
+        78.414759
+      ]
+    ],
+    "steps": [
+      {
+        "instruction": "Head northwest",
+        "distance_m": 137.5,
+        "duration_s": 24.2,
+        "maneuver": "depart right",
+        "road_name": null,
+        "location": [
+          17.484858,
+          78.413764
+        ]
+      },
+      {
+        "instruction": "At the end of the road, turn left",
+        "distance_m": 26.4,
+        "duration_s": 5.5,
+        "maneuver": "end of road left",
+        "road_name": null,
+        "location": [
+          17.485743,
+          78.413399
+        ]
+      },
+      {
+        "instruction": "Turn right",
+        "distance_m": 145.6,
+        "duration_s": 13.3,
+        "maneuver": "turn right",
+        "road_name": null,
+        "location": [
+          17.48582,
+          78.413164
+        ]
+      },
+      {
+        "instruction": "At the end of the road, turn right onto Ramalayam Road",
+        "distance_m": 389.1,
+        "duration_s": 35.4,
+        "maneuver": "end of road right",
+        "road_name": "Ramalayam Road",
+        "location": [
+          17.487127,
+          78.413291
+        ]
+      },
+      {
+        "instruction": "Bear right",
+        "distance_m": 179.8,
+        "duration_s": 27.9,
+        "maneuver": "turn slight right",
+        "road_name": null,
+        "location": [
+          17.490354,
+          78.413911
+        ]
+      },
+      {
+        "instruction": "Turn right onto sheshadri nagar",
+        "distance_m": 35.2,
+        "duration_s": 5.1,
+        "maneuver": "turn right",
+        "road_name": "sheshadri nagar",
+        "location": [
+          17.491896,
+          78.414444
+        ]
+      },
+      {
+        "instruction": "Arrive at the destination on the right",
+        "distance_m": 0,
+        "duration_s": 0,
+        "maneuver": "arrive right",
+        "road_name": "sheshadri nagar",
+        "location": [
+          17.491798,
+          78.414759
+        ]
+      }
+    ],
+    "summary": "Ramalayam Road, sheshadri nagar",
+    "origin_snapped": [
+      17.484858,
+      78.413764
+    ],
+    "destination_snapped": [
+      17.491798,
+      78.414759
+    ],
+    "origin_snap_m": 6.018940914,
+    "destination_snap_m": 6.518047756,
+    "alternatives": [],
+    "traffic_aware": false,
+    "distance_km": 0.913,
+    "duration_min": 1.9,
+    "point_count": 35,
+    "bbox": [
+      17.484858,
+      78.413164,
+      17.491896,
+      78.414759
+    ],
+    "hub_id": "68efcc5d579bc90024349858"
+  },
+  "route_status": "available",
+  "route_error": null,
+  "candidates_preview": null,
+  "warnings": [],
+  "links": {
+    "google_maps": "https://www.google.com/maps/dir/?api=1&origin=17.484900,78.413800&destination=17.491742,78.414740&travelmode=driving",
+    "google_earth_destination": "https://earth.google.com/web/@17.491742,78.414740,500a,3000d,35y,0h,0t,0r"
+  },
+  "timing_ms": 2833
+}
