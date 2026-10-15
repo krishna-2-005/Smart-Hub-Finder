@@ -1,0 +1,18 @@
+# Not needed by the deployed app; keeps the bundle small and keeps the source KML
+# (which contains personal names) off the public deployment.
+Akhil Copy.kml
+data/source/
+data/processed/repaired_full.kml
+data/schemas/
+data/uploads/
+data/staging/
+data/archive/
+data/app.db
+data/*.log
+exports/
+e2e/
+docs/
+backend/tests/
+backend/.venv/
+frontend/node_modules/
+frontend/dist/

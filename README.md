@@ -97,6 +97,42 @@ after: none changed. The original is kept as `data/source/original_backup.kml`, 
 
 ---
 
+## Deploying to Vercel (auto-deploys on every push to `main`)
+
+One Vercel project serves everything from one URL. The React build is served as static files, and the FastAPI backend
+runs as a Python serverless function (`api/index.py`). All configuration is in `vercel.json`: build commands, the
+`/api/*` rewrite, SPA routing, function limits, and the Mumbai region (`bom1`).
+
+**One-time setup**
+
+1. On vercel.com: **Add New… → Project → Import Git Repository** → choose `Smart-Hub-Finder`. Allow the Vercel GitHub
+   app access to the repo if prompted.
+2. Keep **Root Directory** `./` and **Framework Preset** *Other*. Do not override the build, output or install
+   commands; `vercel.json` sets them.
+3. Optional **Environment Variables**: `GOOGLE_MAPS_API_KEY` (or `ORS_API_KEY`) and `ROUTING_PROVIDER`. Without them
+   the app uses OSRM.
+4. **Deploy.** The production URL looks like `https://smart-hub-finder.vercel.app`.
+
+After that, every `git push` to `main` builds and publishes to the production URL automatically (about 1–2 minutes).
+Other branches and pull requests get their own preview URLs. Check *Settings → Git → Production Branch* is `main`.
+After you change environment variables, redeploy (*Deployments → ⋯ → Redeploy*).
+
+**Cloud vs local behaviour**
+
+| | Local | Vercel |
+|---|---|---|
+| Nearest hub, routes, maps, analytics, exports | ✓ | ✓ (same code) |
+| GPS location | localhost or `-Https` | ✓ (HTTPS by default, works on phones) |
+| Route history & saved settings | permanent SQLite (`data/app.db`) | temporary: serverless disks reset, so history may disappear |
+| KML import | analyse + activate | analyse only, files up to 4.4 MB (upload a `.kmz`). To change the live data, process locally and push `data/processed` |
+| "Write all 5 files to exports/" | ✓ | hidden. Use the download buttons |
+
+The first request after a quiet period takes a few seconds (cold start). The source KML, its backup, the full repaired
+KML and the test suites are not deployed (`.vercelignore`); the app only needs `data/processed`. Vercel's Hobby plan is
+for non-commercial use, so use a Pro team for company use.
+
+---
+
 ## Using the application
 
 | Page | What it does |
@@ -212,6 +248,9 @@ data/source/original_backup.kml  byte-identical backup
 data/processed/                hubs.json, hubs.geojson, clusters.json, cleaned_hubs.kml, repaired_full.kml,
                                kml_analysis_report.md, analysis.json, layers/*.geojson
 exports/                       the five Google Earth KML files
+api/index.py                   Vercel serverless entry point (imports backend/app)
+vercel.json, .vercelignore     Vercel build, routing and bundle configuration
+requirements.txt               API runtime dependencies (used by Vercel; backend/requirements.txt adds dev tools)
 backend/
   app/main.py                  FastAPI app, error handling, lifespan
   app/api/                     routes_data, routes_search, routes_export, routes_admin
@@ -231,7 +270,7 @@ docs/DEMO_GUIDE.md             live demonstration script
 ## Testing
 
 ```powershell
-cd backend;  .venv\Scripts\python -m pytest            # 76 tests: real KML, mock + live OSRM, API, OGC schema
+cd backend;  .venv\Scripts\python -m pytest            # 82 tests: real KML, mock + live OSRM, API, OGC schema, Vercel mode
 cd frontend; npm test                                   # coordinate validation & formatting
 # browser end-to-end (backend + frontend running; uses installed Microsoft Edge):
 backend\.venv\Scripts\pip install -r backend\requirements-dev.txt
@@ -256,6 +295,8 @@ picking, outside-coverage fallback, every page, the mobile layout, and KML downl
 ## Limitations
 
 - Hub coordinates are inferred from service-area polygons; the KML has no explicit hub points.
+- On Vercel, route history and saved settings are temporary (serverless storage). Connect a hosted database for
+  permanent cloud history.
 - Public OSRM servers are rate-limited, best-effort, and have no live traffic. Use Google (with a key) or self-hosted
   OSRM for production; two-wheeler routing needs Google.
 - Google Earth Web import is manual (no supported API for pushing KML into a user's Earth Web session). KML exports were
