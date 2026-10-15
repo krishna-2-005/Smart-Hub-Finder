@@ -1,0 +1,2802 @@
+{
+  "count": 26,
+  "method": "explicit cluster attribute + cluster boundary polygons",
+  "clusters": [
+    {
+      "cluster_id": "kondapur",
+      "name": "Kondapur",
+      "display_name": "Kondapur",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Kondapur"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3337068,
+              17.4551251
+            ],
+            [
+              78.3475255,
+              17.4533423
+            ],
+            [
+              78.3640911,
+              17.4515236
+            ],
+            [
+              78.3729534,
+              17.45131
+            ],
+            [
+              78.3727608,
+              17.4575647
+            ],
+            [
+              78.3806143,
+              17.4604416
+            ],
+            [
+              78.3855469,
+              17.4658569
+            ],
+            [
+              78.3846215,
+              17.4699622
+            ],
+            [
+              78.3811613,
+              17.4729328
+            ],
+            [
+              78.3731402,
+              17.4796473
+            ],
+            [
+              78.3674357,
+              17.4821456
+            ],
+            [
+              78.3560533,
+              17.4864661
+            ],
+            [
+              78.3413497,
+              17.4873166
+            ],
+            [
+              78.333483,
+              17.4863498
+            ],
+            [
+              78.322827,
+              17.48294
+            ],
+            [
+              78.3214219,
+              17.4674292
+            ],
+            [
+              78.3337068,
+              17.4551251
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Kondapur",
+      "hub_ids": [
+        "68efcc5d579bc900243497c3",
+        "68efcc5d579bc900243497d4",
+        "68efcc5d579bc900243497d5",
+        "69b1b401649a090026d2ce9c",
+        "68efcc5d579bc900243497dc",
+        "68efcc5d579bc900243497dd",
+        "68efcc5d579bc900243497de",
+        "68efcc5d579bc900243497df",
+        "68efcc5d579bc900243497e0",
+        "68efcc5d579bc900243497e1",
+        "68efcc5d579bc900243497e2",
+        "68efcc5d579bc900243497e3",
+        "68efcc5d579bc900243497f6",
+        "68efcc5d579bc900243497f8",
+        "68efcc5d579bc900243497ff",
+        "68efcc5d579bc9002434980e",
+        "68efcc5d579bc9002434980f",
+        "68efcc5d579bc90024349811",
+        "68efcc5d579bc90024349813",
+        "68efcc5d579bc90024349816",
+        "68efcc5d579bc90024349817",
+        "68efcc5d579bc90024349826",
+        "68efcc5d579bc9002434982a",
+        "68efcc5d579bc9002434982c",
+        "68efcc5d579bc90024349830",
+        "68efcc5d579bc900243498eb",
+        "69b1b401649a090026d2ce9d",
+        "69b1b401649a090026d2ce9b"
+      ],
+      "hub_count": 28,
+      "active_hub_count": 28,
+      "status_counts": {
+        "Live": 28
+      },
+      "region_counts": {
+        "southern_hyd": 28
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 28
+      },
+      "center_lat": 17.4695119,
+      "center_lng": 78.3516376,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 20.2921,
+      "service_area_union_km2": 10.2126,
+      "bbox": [
+        17.45131,
+        78.3214219,
+        17.4873166,
+        78.3855469
+      ],
+      "max_hub_distance_km": 3.127,
+      "mean_nearest_neighbor_km": 0.626,
+      "hubs_outside_boundary": [
+        "68efcc5d579bc90024349826"
+      ],
+      "color": "#2563eb"
+    },
+    {
+      "cluster_id": "borabanda",
+      "name": "Borabanda",
+      "display_name": "Borabanda",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Borabanda",
+        "borabanda"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.4085996,
+              17.4616487
+            ],
+            [
+              78.4077411,
+              17.4606658
+            ],
+            [
+              78.4140929,
+              17.4471553
+            ],
+            [
+              78.4084283,
+              17.4342998
+            ],
+            [
+              78.4246495,
+              17.4258654
+            ],
+            [
+              78.4287263,
+              17.4154856
+            ],
+            [
+              78.4429308,
+              17.4177173
+            ],
+            [
+              78.4655031,
+              17.4196626
+            ],
+            [
+              78.477778,
+              17.4406055
+            ],
+            [
+              78.4695392,
+              17.453461
+            ],
+            [
+              78.4207886,
+              17.4625302
+            ],
+            [
+              78.4159809,
+              17.4696308
+            ],
+            [
+              78.411368,
+              17.4698118
+            ],
+            [
+              78.4049519,
+              17.469181
+            ],
+            [
+              78.4085996,
+              17.4616487
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Borabanda",
+      "hub_ids": [
+        "69c41f70bf901e002450b2c2",
+        "69c41f70bf901e002450b2b5",
+        "68efcc5d579bc90024349808",
+        "68efcc5d579bc90024349809",
+        "68efcc5d579bc9002434981c",
+        "68efcc5d579bc90024349831",
+        "68efcc5d579bc90024349832",
+        "68efcc5d579bc90024349846",
+        "68efcc5d579bc90024349852",
+        "68efcc5d579bc90024349853",
+        "68efcc5d579bc90024349854",
+        "68efcc5d579bc90024349855",
+        "68efcc5d579bc9002434988a",
+        "6a036c3a20c29a0025e7cc38",
+        "68efcc5d579bc9002434988c",
+        "68efcc5d579bc9002434988d",
+        "68efcc5d579bc9002434988e",
+        "68efcc5d579bc9002434988f",
+        "68efcc5d579bc90024349890",
+        "68efcc5d579bc900243498de",
+        "69c41f70bf901e002450b2c3",
+        "69c41f70bf901e002450b2bd",
+        "6a036c3a20c29a0025e7cc45",
+        "6a036c3a20c29a0025e7cc47",
+        "6a33b8c7d10b79000b7b6de1"
+      ],
+      "hub_count": 25,
+      "active_hub_count": 24,
+      "status_counts": {
+        "Live": 24,
+        "Not Live": 1
+      },
+      "region_counts": {
+        "northern_hyd": 25
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 25
+      },
+      "center_lat": 17.4407123,
+      "center_lng": 78.4406548,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 28.3379,
+      "service_area_union_km2": 14.0226,
+      "bbox": [
+        17.4154856,
+        78.4049519,
+        17.4698118,
+        78.477778
+      ],
+      "max_hub_distance_km": 4.637,
+      "mean_nearest_neighbor_km": 0.733,
+      "hubs_outside_boundary": [],
+      "color": "#dc2626"
+    },
+    {
+      "cluster_id": "kukatpally",
+      "name": "Kukatpally",
+      "display_name": "Kukatpally",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Kukatpally",
+        "kukatpally"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3686076,
+              17.4834511
+            ],
+            [
+              78.3808811,
+              17.4747734
+            ],
+            [
+              78.3893351,
+              17.4698814
+            ],
+            [
+              78.396202,
+              17.4637306
+            ],
+            [
+              78.4005798,
+              17.4672408
+            ],
+            [
+              78.4049572,
+              17.4702288
+            ],
+            [
+              78.4129033,
+              17.4704794
+            ],
+            [
+              78.4176577,
+              17.4698552
+            ],
+            [
+              78.4221544,
+              17.463418
+            ],
+            [
+              78.4327785,
+              17.4648711
+            ],
+            [
+              78.4351447,
+              17.4785842
+            ],
+            [
+              78.421703,
+              17.5109581
+            ],
+            [
+              78.3991633,
+              17.5061671
+            ],
+            [
+              78.3777917,
+              17.5081325
+            ],
+            [
+              78.3728593,
+              17.4921563
+            ],
+            [
+              78.3648969,
+              17.4837105
+            ],
+            [
+              78.3686076,
+              17.4834511
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Kukatpally",
+      "hub_ids": [
+        "68efcc5d579bc900243497cd",
+        "68efcc5d579bc900243497cf",
+        "68efcc5d579bc900243497db",
+        "68efcc5d579bc900243497fc",
+        "68efcc5d579bc900243497fe",
+        "68efcc5d579bc90024349800",
+        "6a036c3a20c29a0025e7cc2d",
+        "68efcc5d579bc9002434981e",
+        "68efcc5d579bc9002434981f",
+        "68efcc5d579bc90024349820",
+        "69bc37716c4e72002539e0b7",
+        "68efcc5d579bc90024349822",
+        "68efcc5d579bc90024349858",
+        "68efcc5d579bc90024349859",
+        "68efcc5d579bc9002434985a",
+        "68efcc5d579bc9002434985b",
+        "68efcc5d579bc90024349868",
+        "68efcc5d579bc90024349889",
+        "68efcc5d579bc900243498df",
+        "69bc37716c4e72002539e0b8",
+        "69bc37716c4e72002539e0b9",
+        "69bc37716c4e72002539e0ba",
+        "6a036c3a20c29a0025e7cc3e",
+        "6a2ba19548d99f00249dc0e8"
+      ],
+      "hub_count": 24,
+      "active_hub_count": 24,
+      "status_counts": {
+        "Live": 24
+      },
+      "region_counts": {
+        "northern_hyd": 24
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 24
+      },
+      "center_lat": 17.4873592,
+      "center_lng": 78.4034121,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 26.2103,
+      "service_area_union_km2": 14.0011,
+      "bbox": [
+        17.463418,
+        78.3648969,
+        17.5109581,
+        78.4351447
+      ],
+      "max_hub_distance_km": 3.277,
+      "mean_nearest_neighbor_km": 0.739,
+      "hubs_outside_boundary": [],
+      "color": "#16a34a"
+    },
+    {
+      "cluster_id": "miyapur",
+      "name": "Miyapur",
+      "display_name": "Miyapur",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Miyapur",
+        "miyapur"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3284355,
+              17.5113472
+            ],
+            [
+              78.3238002,
+              17.4993956
+            ],
+            [
+              78.3190799,
+              17.4846603
+            ],
+            [
+              78.3431977,
+              17.4901449
+            ],
+            [
+              78.3546208,
+              17.4917778
+            ],
+            [
+              78.3756429,
+              17.4898177
+            ],
+            [
+              78.3808706,
+              17.4969474
+            ],
+            [
+              78.3831806,
+              17.5193028
+            ],
+            [
+              78.3661155,
+              17.5185502
+            ],
+            [
+              78.3583475,
+              17.5260398
+            ],
+            [
+              78.3464591,
+              17.5237071
+            ],
+            [
+              78.3284355,
+              17.5113472
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Miyapur",
+      "hub_ids": [
+        "68efcc5d579bc900243497d6",
+        "68efcc5d579bc900243497d7",
+        "69c41f70bf901e002450b2b4",
+        "68efcc5d579bc900243497e6",
+        "68efcc5d579bc900243497e8",
+        "69cc1478095ac20024cc2d16",
+        "68efcc5d579bc9002434980d",
+        "68efcc5d579bc90024349810",
+        "68efcc5d579bc90024349812",
+        "68efcc5d579bc90024349814",
+        "68efcc5d579bc9002434982b",
+        "68efcc5d579bc90024349833",
+        "68efcc5d579bc90024349834",
+        "68efcc5d579bc90024349835",
+        "68efcc5d579bc9002434983e",
+        "68efcc5d579bc9002434983f",
+        "69cc1478095ac20024cc2d26",
+        "68efcc5d579bc900243498c7",
+        "69c41f70bf901e002450b2bc",
+        "69cc1478095ac20024cc2d27",
+        "6a2ba19548d99f00249dc0e5",
+        "6a33b8c7d10b79000b7b6ddc"
+      ],
+      "hub_count": 22,
+      "active_hub_count": 22,
+      "status_counts": {
+        "Live": 22
+      },
+      "region_counts": {
+        "northern_hyd": 22
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 22
+      },
+      "center_lat": 17.5048505,
+      "center_lng": 78.3528743,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 20.1803,
+      "service_area_union_km2": 11.3549,
+      "bbox": [
+        17.4846603,
+        78.3183525,
+        17.5260398,
+        78.3831806
+      ],
+      "max_hub_distance_km": 4.066,
+      "mean_nearest_neighbor_km": 0.696,
+      "hubs_outside_boundary": [
+        "68efcc5d579bc9002434980d",
+        "68efcc5d579bc90024349834",
+        "69c41f70bf901e002450b2bc"
+      ],
+      "color": "#9333ea"
+    },
+    {
+      "cluster_id": "nallagandla",
+      "name": "Nallagandla",
+      "display_name": "Nallagandla",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Nallagandla",
+        "nallagandla"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3105462,
+              17.4810126
+            ],
+            [
+              78.3116622,
+              17.48748
+            ],
+            [
+              78.2948823,
+              17.4853105
+            ],
+            [
+              78.2797763,
+              17.4855972
+            ],
+            [
+              78.2531047,
+              17.4675237
+            ],
+            [
+              78.2828235,
+              17.4520702
+            ],
+            [
+              78.3040652,
+              17.4445166
+            ],
+            [
+              78.321018,
+              17.474217
+            ],
+            [
+              78.3224772,
+              17.4838162
+            ],
+            [
+              78.31398,
+              17.481381
+            ],
+            [
+              78.3105462,
+              17.4810126
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Nallagandla",
+      "hub_ids": [
+        "69497ec5ced32d0027560421",
+        "69bc37716c4e72002539e0b4",
+        "69bc37716c4e72002539e0a6",
+        "69bc37716c4e72002539e0b6",
+        "69bc37716c4e72002539e0b3",
+        "69bc37716c4e72002539e0b1",
+        "69bc37716c4e72002539e0ae",
+        "69bc37716c4e72002539e0a8",
+        "68efcc5d579bc900243498cf",
+        "69bc37716c4e72002539e0aa",
+        "68efcc5d579bc900243498d1",
+        "69bc37716c4e72002539e0ab",
+        "69bc37716c4e72002539e0ac",
+        "68efcc5d579bc900243498d4",
+        "68efcc5d579bc900243498d5",
+        "68efcc5d579bc900243498ec",
+        "68efcc5d579bc900243498f0",
+        "69bc37716c4e72002539e0b2",
+        "69497ec5ced32d0027560422",
+        "69bc37716c4e72002539e0af",
+        "69bc37716c4e72002539e0b5",
+        "6a2ba19548d99f00249dc0e1"
+      ],
+      "hub_count": 22,
+      "active_hub_count": 20,
+      "status_counts": {
+        "Live": 20,
+        "Not Live": 2
+      },
+      "region_counts": {
+        "southern_hyd": 22
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 22
+      },
+      "center_lat": 17.4684134,
+      "center_lng": 78.2916277,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 20.5754,
+      "service_area_union_km2": 7.5378,
+      "bbox": [
+        17.4445166,
+        78.2531047,
+        17.48748,
+        78.3224772
+      ],
+      "max_hub_distance_km": 3.361,
+      "mean_nearest_neighbor_km": 0.616,
+      "hubs_outside_boundary": [],
+      "color": "#ea580c"
+    },
+    {
+      "cluster_id": "lb_nagar",
+      "name": "LB_Nagar",
+      "display_name": "LB Nagar",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "LB_Nagar"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.494094,
+              17.376127
+            ],
+            [
+              78.5038786,
+              17.3549102
+            ],
+            [
+              78.5057669,
+              17.3446695
+            ],
+            [
+              78.5045653,
+              17.3359031
+            ],
+            [
+              78.5383826,
+              17.3258252
+            ],
+            [
+              78.5843018,
+              17.3262349
+            ],
+            [
+              78.5900525,
+              17.3474551
+            ],
+            [
+              78.582671,
+              17.3765366
+            ],
+            [
+              78.5677366,
+              17.3885775
+            ],
+            [
+              78.5304862,
+              17.380878
+            ],
+            [
+              78.494094,
+              17.376127
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "LB_Nagar",
+      "hub_ids": [
+        "68efcc5d579bc9002434989f",
+        "68efcc5d579bc900243498a0",
+        "68efcc5d579bc900243498a1",
+        "68efcc5d579bc900243498a2",
+        "68efcc5d579bc900243498a3",
+        "68efcc5d579bc900243498a4",
+        "68efcc5d579bc900243498a5",
+        "68efcc5d579bc900243498a6",
+        "68efcc5d579bc900243498a7",
+        "68efcc5d579bc900243498a8",
+        "68efcc5d579bc900243498a9",
+        "68efcc5d579bc900243498aa",
+        "68efcc5d579bc900243498ab",
+        "68efcc5d579bc900243498ac",
+        "68efcc5d579bc900243498bd",
+        "68efcc5d579bc900243498be",
+        "68efcc5d579bc900243498bf",
+        "69c41f70bf901e002450b2b9",
+        "68efcc5d579bc900243498c1",
+        "69c41f70bf901e002450b2bf",
+        "6980e9ccbaa1520023db03a5"
+      ],
+      "hub_count": 21,
+      "active_hub_count": 21,
+      "status_counts": {
+        "Live": 21
+      },
+      "region_counts": {
+        "eastern_hyd": 21
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 21
+      },
+      "center_lat": 17.3554152,
+      "center_lng": 78.5461366,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 53.8853,
+      "service_area_union_km2": 16.8273,
+      "bbox": [
+        17.3258252,
+        78.4182619,
+        17.4159507,
+        78.5900525
+      ],
+      "max_hub_distance_km": 15.147,
+      "mean_nearest_neighbor_km": 1.572,
+      "hubs_outside_boundary": [
+        "6980e9ccbaa1520023db03a5"
+      ],
+      "color": "#0891b2"
+    },
+    {
+      "cluster_id": "kompally",
+      "name": "Kompally",
+      "display_name": "Kompally",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Kompally",
+        "kompally"
+      ],
+      "boundary": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                78.4454377,
+                17.512274
+              ],
+              [
+                78.4449227,
+                17.5103095
+              ],
+              [
+                78.4451481,
+                17.5106082
+              ],
+              [
+                78.4454377,
+                17.512274
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                78.4451481,
+                17.5106082
+              ],
+              [
+                78.4399445,
+                17.480676
+              ],
+              [
+                78.4626038,
+                17.4819859
+              ],
+              [
+                78.4826883,
+                17.4923008
+              ],
+              [
+                78.5019144,
+                17.4934469
+              ],
+              [
+                78.5226855,
+                17.4941017
+              ],
+              [
+                78.5190806,
+                17.5189858
+              ],
+              [
+                78.5237155,
+                17.549104
+              ],
+              [
+                78.4713586,
+                17.5453395
+              ],
+              [
+                78.4451481,
+                17.5106082
+              ]
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Kompally",
+      "hub_ids": [
+        "69b1b401649a090026d2ce9e",
+        "68efcc5d579bc90024349875",
+        "6a036c3a20c29a0025e7cc2c",
+        "68efcc5d579bc90024349877",
+        "68efcc5d579bc90024349878",
+        "68efcc5d579bc90024349879",
+        "6a036c3a20c29a0025e7cc32",
+        "6a036c3a20c29a0025e7cc31",
+        "68efcc5d579bc9002434987c",
+        "69bc37716c4e72002539e0a9",
+        "6a036c3a20c29a0025e7cc33",
+        "68efcc5d579bc90024349880",
+        "6a036c3a20c29a0025e7cc2b",
+        "69c41f70bf901e002450b2b8",
+        "69bc37716c4e72002539e0b0",
+        "69b1b401649a090026d2ce9f",
+        "6a036c3a20c29a0025e7cc3d",
+        "6a036c3a20c29a0025e7cc40",
+        "6a2ba19548d99f00249dc0e9",
+        "6a2ba19548d99f00249dc0ea"
+      ],
+      "hub_count": 20,
+      "active_hub_count": 17,
+      "status_counts": {
+        "Live": 17,
+        "Not Live": 1,
+        "To be made live": 2
+      },
+      "region_counts": {
+        "eastern_hyd": 20
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 20
+      },
+      "center_lat": 17.515249,
+      "center_lng": 78.4842224,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 47.1222,
+      "service_area_union_km2": 14.1553,
+      "bbox": [
+        17.480676,
+        78.4399445,
+        17.549104,
+        78.5237155
+      ],
+      "max_hub_distance_km": 4.863,
+      "mean_nearest_neighbor_km": 0.858,
+      "hubs_outside_boundary": [],
+      "color": "#db2777"
+    },
+    {
+      "cluster_id": "madhura_nagar",
+      "name": "Madhura_Nagar",
+      "display_name": "Madhura Nagar",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Madhura_Nagar"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3869167,
+              17.5472575
+            ],
+            [
+              78.3738752,
+              17.5349994
+            ],
+            [
+              78.3745675,
+              17.5207768
+            ],
+            [
+              78.37875,
+              17.5113318
+            ],
+            [
+              78.384523,
+              17.5105448
+            ],
+            [
+              78.3917524,
+              17.5073709
+            ],
+            [
+              78.394437,
+              17.5104638
+            ],
+            [
+              78.4049724,
+              17.5122439
+            ],
+            [
+              78.4134481,
+              17.511077
+            ],
+            [
+              78.43125,
+              17.5188318
+            ],
+            [
+              78.4302551,
+              17.537895
+            ],
+            [
+              78.4038031,
+              17.5313199
+            ],
+            [
+              78.4013458,
+              17.5404189
+            ],
+            [
+              78.3982996,
+              17.5456976
+            ],
+            [
+              78.3927798,
+              17.5484417
+            ],
+            [
+              78.3869167,
+              17.5472575
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Madhura_Nagar",
+      "hub_ids": [
+        "68efcc5d579bc900243497c8",
+        "6a036c3a20c29a0025e7cc36",
+        "69cc1478095ac20024cc2d20",
+        "69cc1478095ac20024cc2d17",
+        "69497ec5ced32d002756041a",
+        "69cc1478095ac20024cc2d1c",
+        "6a036c3a20c29a0025e7cc44",
+        "69cc1478095ac20024cc2d19",
+        "69cc1478095ac20024cc2d33",
+        "68efcc5d579bc90024349867",
+        "68efcc5d579bc900243498c5",
+        "69497ec5ced32d002756041b",
+        "69497ec5ced32d002756041c",
+        "69cc1478095ac20024cc2d28",
+        "69cc1478095ac20024cc2d2b",
+        "69cc1478095ac20024cc2d2f",
+        "6a036c3a20c29a0025e7cc37",
+        "6a036c3a20c29a0025e7cc42",
+        "6a036c3a20c29a0025e7cc43"
+      ],
+      "hub_count": 19,
+      "active_hub_count": 19,
+      "status_counts": {
+        "Live": 19
+      },
+      "region_counts": {
+        "northern_hyd": 19
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 19
+      },
+      "center_lat": 17.5262355,
+      "center_lng": 78.3998876,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 17.8829,
+      "service_area_union_km2": 9.2246,
+      "bbox": [
+        17.5073709,
+        78.3738752,
+        17.5484417,
+        78.43125
+      ],
+      "max_hub_distance_km": 2.914,
+      "mean_nearest_neighbor_km": 0.666,
+      "hubs_outside_boundary": [],
+      "color": "#65a30d"
+    },
+    {
+      "cluster_id": "hitech_city",
+      "name": "Hitech_City",
+      "display_name": "Hitech City",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Hitech_City",
+        "hitech_city"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3512078,
+              17.4516202
+            ],
+            [
+              78.3516485,
+              17.4340227
+            ],
+            [
+              78.36625,
+              17.431
+            ],
+            [
+              78.382304,
+              17.426703
+            ],
+            [
+              78.4002196,
+              17.4322377
+            ],
+            [
+              78.4117854,
+              17.4466152
+            ],
+            [
+              78.4027102,
+              17.4606099
+            ],
+            [
+              78.3884841,
+              17.4617492
+            ],
+            [
+              78.3839493,
+              17.4600673
+            ],
+            [
+              78.3796721,
+              17.4583034
+            ],
+            [
+              78.3795293,
+              17.4514186
+            ],
+            [
+              78.3770981,
+              17.4495211
+            ],
+            [
+              78.3512078,
+              17.4516202
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Hitech_City",
+      "hub_ids": [
+        "68efcc5d579bc900243497d2",
+        "68efcc5d579bc900243497d3",
+        "68efcc5d579bc900243497ed",
+        "68efcc5d579bc900243497ee",
+        "68efcc5d579bc90024349818",
+        "68efcc5d579bc90024349819",
+        "68efcc5d579bc9002434981a",
+        "68efcc5d579bc9002434981b",
+        "68efcc5d579bc90024349825",
+        "69c41f70bf901e002450b2b6",
+        "69cc1478095ac20024cc2d25",
+        "68efcc5d579bc90024349829",
+        "68efcc5d579bc9002434982d",
+        "68efcc5d579bc9002434982e",
+        "68efcc5d579bc9002434982f",
+        "68efcc5d579bc90024349895",
+        "6a2ba19548d99f00249dc0e0",
+        "6a2ba19548d99f00249dc0da"
+      ],
+      "hub_count": 18,
+      "active_hub_count": 18,
+      "status_counts": {
+        "Live": 18
+      },
+      "region_counts": {
+        "southern_hyd": 18
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 18
+      },
+      "center_lat": 17.4435636,
+      "center_lng": 78.3821953,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 16.3409,
+      "service_area_union_km2": 8.3598,
+      "bbox": [
+        17.426703,
+        78.3512078,
+        17.4617492,
+        78.4117854
+      ],
+      "max_hub_distance_km": 2.672,
+      "mean_nearest_neighbor_km": 0.684,
+      "hubs_outside_boundary": [
+        "68efcc5d579bc90024349825"
+      ],
+      "color": "#b45309"
+    },
+    {
+      "cluster_id": "bachupally",
+      "name": "Bachupally",
+      "display_name": "Bachupally",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Bachupally",
+        "bachupally"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3577983,
+              17.5705586
+            ],
+            [
+              78.3380573,
+              17.5322597
+            ],
+            [
+              78.3428638,
+              17.5237478
+            ],
+            [
+              78.3572318,
+              17.5206793
+            ],
+            [
+              78.373248,
+              17.5196554
+            ],
+            [
+              78.3737629,
+              17.5366793
+            ],
+            [
+              78.3916157,
+              17.5564839
+            ],
+            [
+              78.4001988,
+              17.5663036
+            ],
+            [
+              78.3577983,
+              17.5705586
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Bachupally",
+      "hub_ids": [
+        "68efcc5d579bc9002434985f",
+        "68efcc5d579bc90024349860",
+        "68efcc5d579bc90024349861",
+        "68efcc5d579bc90024349862",
+        "69cc1478095ac20024cc2d21",
+        "69cc1478095ac20024cc2d22",
+        "68efcc5d579bc90024349865",
+        "68efcc5d579bc90024349866",
+        "68efcc5d579bc900243498c3",
+        "68efcc5d579bc900243498c4",
+        "69cc1478095ac20024cc2d1f",
+        "68efcc5d579bc900243498c8",
+        "68efcc5d579bc900243498dd",
+        "69cc1478095ac20024cc2d2e",
+        "69cc1478095ac20024cc2d30",
+        "6a2ba19548d99f00249dc0df"
+      ],
+      "hub_count": 16,
+      "active_hub_count": 15,
+      "status_counts": {
+        "Live": 15,
+        "Not Live": 1
+      },
+      "region_counts": {
+        "northern_hyd": 16
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 16
+      },
+      "center_lat": 17.5463125,
+      "center_lng": 78.3651578,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 20.826,
+      "service_area_union_km2": 6.4878,
+      "bbox": [
+        17.5196554,
+        78.3380573,
+        17.5705586,
+        78.4001988
+      ],
+      "max_hub_distance_km": 2.955,
+      "mean_nearest_neighbor_km": 0.77,
+      "hubs_outside_boundary": [],
+      "color": "#e11d48"
+    },
+    {
+      "cluster_id": "kachiguda",
+      "name": "Kachiguda",
+      "display_name": "Kachiguda",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Kachiguda"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.4896231,
+              17.432667
+            ],
+            [
+              78.4701396,
+              17.4055599
+            ],
+            [
+              78.4721137,
+              17.3855751
+            ],
+            [
+              78.4940863,
+              17.3849198
+            ],
+            [
+              78.5230971,
+              17.3941754
+            ],
+            [
+              78.5248995,
+              17.4307017
+            ],
+            [
+              78.4896231,
+              17.432667
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Kachiguda",
+      "hub_ids": [
+        "68efcc5d579bc90024349848",
+        "68efcc5d579bc90024349847",
+        "68efcc5d579bc9002434984a",
+        "68efcc5d579bc9002434984b",
+        "68efcc5d579bc90024349849",
+        "68efcc5d579bc9002434984c",
+        "68efcc5d579bc9002434984d",
+        "69cc1478095ac20024cc2d1d",
+        "68efcc5d579bc9002434984f",
+        "68efcc5d579bc90024349850",
+        "69de64323982080024028e8f",
+        "6a036c3a20c29a0025e7cc2a",
+        "68efcc5d579bc900243498c2",
+        "69cc1478095ac20024cc2d29",
+        "69cc1478095ac20024cc2d2c",
+        "6a036c3a20c29a0025e7cc3c"
+      ],
+      "hub_count": 16,
+      "active_hub_count": 16,
+      "status_counts": {
+        "Live": 16
+      },
+      "region_counts": {
+        "eastern_hyd": 16
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 16
+      },
+      "center_lat": 17.4083165,
+      "center_lng": 78.4985683,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 24.8209,
+      "service_area_union_km2": 13.5853,
+      "bbox": [
+        17.3849198,
+        78.4701396,
+        17.432667,
+        78.5248995
+      ],
+      "max_hub_distance_km": 3.056,
+      "mean_nearest_neighbor_km": 0.898,
+      "hubs_outside_boundary": [],
+      "color": "#0d9488"
+    },
+    {
+      "cluster_id": "ramchandrapuram",
+      "name": "Ramchandrapuram",
+      "display_name": "Ramchandrapuram",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Ramchandrapuram"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.2748716,
+              17.5491297
+            ],
+            [
+              78.2813953,
+              17.5114786
+            ],
+            [
+              78.2823167,
+              17.4978241
+            ],
+            [
+              78.296628,
+              17.499558
+            ],
+            [
+              78.297424,
+              17.51133
+            ],
+            [
+              78.3133264,
+              17.5047661
+            ],
+            [
+              78.3363306,
+              17.5358709
+            ],
+            [
+              78.3225968,
+              17.5545312
+            ],
+            [
+              78.292039,
+              17.5658247
+            ],
+            [
+              78.2748716,
+              17.5491297
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Ramchandrapuram",
+      "hub_ids": [
+        "68efcc5d579bc90024349836",
+        "68efcc5d579bc90024349837",
+        "68efcc5d579bc90024349838",
+        "68efcc5d579bc90024349839",
+        "68efcc5d579bc900243498c9",
+        "68efcc5d579bc900243498ca",
+        "68efcc5d579bc900243498cb",
+        "68efcc5d579bc900243498cc",
+        "68efcc5d579bc900243498cd",
+        "69cc1478095ac20024cc2d1b",
+        "69c41f70bf901e002450b2ba",
+        "68efcc5d579bc900243498db",
+        "68efcc5d579bc900243498dc",
+        "68efcc5d579bc900243498ed",
+        "69c41f70bf901e002450b2c1",
+        "69cc1478095ac20024cc2d2a"
+      ],
+      "hub_count": 16,
+      "active_hub_count": 16,
+      "status_counts": {
+        "Live": 16
+      },
+      "region_counts": {
+        "northern_hyd": 16
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 16
+      },
+      "center_lat": 17.5332769,
+      "center_lng": 78.3020479,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 31.4018,
+      "service_area_union_km2": 9.3446,
+      "bbox": [
+        17.4978241,
+        78.2748716,
+        17.5658247,
+        78.3363306
+      ],
+      "max_hub_distance_km": 3.669,
+      "mean_nearest_neighbor_km": 0.855,
+      "hubs_outside_boundary": [
+        "68efcc5d579bc900243498cc",
+        "68efcc5d579bc900243498cd"
+      ],
+      "color": "#4f46e5"
+    },
+    {
+      "cluster_id": "bowenpally",
+      "name": "Bowenpally",
+      "display_name": "Bowenpally",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Bowenpally"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.4722388,
+              17.4846359
+            ],
+            [
+              78.4683764,
+              17.4712096
+            ],
+            [
+              78.4762727,
+              17.4477113
+            ],
+            [
+              78.4823666,
+              17.4327264
+            ],
+            [
+              78.5233076,
+              17.4409969
+            ],
+            [
+              78.5241659,
+              17.4530335
+            ],
+            [
+              78.5164411,
+              17.4577005
+            ],
+            [
+              78.5075148,
+              17.4857001
+            ],
+            [
+              78.490778,
+              17.492904
+            ],
+            [
+              78.4722388,
+              17.4846359
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Bowenpally",
+      "hub_ids": [
+        "69c41f70bf901e002450b2b7",
+        "6a036c3a20c29a0025e7cc2f",
+        "68efcc5d579bc9002434986b",
+        "68efcc5d579bc9002434986c",
+        "6a036c3a20c29a0025e7cc2e",
+        "68efcc5d579bc9002434986e",
+        "68efcc5d579bc9002434986f",
+        "68efcc5d579bc90024349870",
+        "68efcc5d579bc90024349871",
+        "68efcc5d579bc90024349883",
+        "6a036c3a20c29a0025e7cc30",
+        "69c41f70bf901e002450b2bb",
+        "69c41f70bf901e002450b2be",
+        "69c41f70bf901e002450b2c0",
+        "6a036c3a20c29a0025e7cc3f"
+      ],
+      "hub_count": 15,
+      "active_hub_count": 15,
+      "status_counts": {
+        "Live": 15
+      },
+      "region_counts": {
+        "eastern_hyd": 15
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 15
+      },
+      "center_lat": 17.461783,
+      "center_lng": 78.4943951,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 26.4779,
+      "service_area_union_km2": 9.6142,
+      "bbox": [
+        17.4327264,
+        78.4683764,
+        17.492904,
+        78.5241659
+      ],
+      "max_hub_distance_km": 2.885,
+      "mean_nearest_neighbor_km": 0.859,
+      "hubs_outside_boundary": [],
+      "color": "#7c3aed"
+    },
+    {
+      "cluster_id": "mehdipatnam",
+      "name": "Mehdipatnam",
+      "display_name": "Mehdipatnam",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Mehdipatnam"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.42875,
+              17.41375
+            ],
+            [
+              78.4370292,
+              17.4032079
+            ],
+            [
+              78.422919,
+              17.404191
+            ],
+            [
+              78.4100784,
+              17.3948537
+            ],
+            [
+              78.4255279,
+              17.3760145
+            ],
+            [
+              78.4402908,
+              17.3796187
+            ],
+            [
+              78.4705883,
+              17.3917758
+            ],
+            [
+              78.4626068,
+              17.4184409
+            ],
+            [
+              78.4429574,
+              17.4164078
+            ],
+            [
+              78.42875,
+              17.41375
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Mehdipatnam",
+      "hub_ids": [
+        "68efcc5d579bc900243497fb",
+        "68efcc5d579bc90024349851",
+        "68efcc5d579bc90024349891",
+        "68efcc5d579bc90024349892",
+        "68efcc5d579bc90024349893",
+        "68efcc5d579bc90024349894",
+        "68efcc5d579bc90024349899",
+        "68efcc5d579bc9002434989a",
+        "68efcc5d579bc9002434989b",
+        "6a036c3a20c29a0025e7cc26",
+        "68efcc5d579bc9002434989e",
+        "68efcc5d579bc900243498f2",
+        "6a036c3a20c29a0025e7cc39"
+      ],
+      "hub_count": 13,
+      "active_hub_count": 13,
+      "status_counts": {
+        "Live": 13
+      },
+      "region_counts": {
+        "southern_hyd": 13
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 13
+      },
+      "center_lat": 17.3974102,
+      "center_lng": 78.4422999,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 18.3956,
+      "service_area_union_km2": 8.73,
+      "bbox": [
+        17.3760145,
+        78.4100784,
+        17.4184409,
+        78.4705883
+      ],
+      "max_hub_distance_km": 2.438,
+      "mean_nearest_neighbor_km": 0.853,
+      "hubs_outside_boundary": [],
+      "color": "#ca8a04"
+    },
+    {
+      "cluster_id": "sainikpuri",
+      "name": "Sainikpuri",
+      "display_name": "Sainikpuri",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Sainikpuri"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.5313846,
+              17.5336287
+            ],
+            [
+              78.5252047,
+              17.4963044
+            ],
+            [
+              78.5186816,
+              17.479113
+            ],
+            [
+              78.5411693,
+              17.4786218
+            ],
+            [
+              78.5501153,
+              17.4832772
+            ],
+            [
+              78.5533009,
+              17.4828213
+            ],
+            [
+              78.5556281,
+              17.4800731
+            ],
+            [
+              78.5807234,
+              17.4773766
+            ],
+            [
+              78.5682256,
+              17.5016956
+            ],
+            [
+              78.5549022,
+              17.5128394
+            ],
+            [
+              78.5470057,
+              17.5323192
+            ],
+            [
+              78.5313846,
+              17.5336287
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Sainikpuri",
+      "hub_ids": [
+        "68efcc5d579bc9002434987e",
+        "68efcc5d579bc900243498b0",
+        "68efcc5d579bc900243498b3",
+        "68efcc5d579bc900243498b4",
+        "6a036c3a20c29a0025e7cc35",
+        "68efcc5d579bc900243498b6",
+        "6a036c3a20c29a0025e7cc34",
+        "6a036c3a20c29a0025e7cc28",
+        "68efcc5d579bc900243498d8",
+        "6a036c3a20c29a0025e7cc27",
+        "6a036c3a20c29a0025e7cc3a",
+        "6a036c3a20c29a0025e7cc41"
+      ],
+      "hub_count": 12,
+      "active_hub_count": 10,
+      "status_counts": {
+        "Live": 10,
+        "Not Live": 2
+      },
+      "region_counts": {
+        "eastern_hyd": 12
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 12
+      },
+      "center_lat": 17.5002407,
+      "center_lng": 78.5459843,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 22.9767,
+      "service_area_union_km2": 9.7319,
+      "bbox": [
+        17.4570893,
+        78.5186816,
+        17.5336287,
+        78.5807234
+      ],
+      "max_hub_distance_km": 4.841,
+      "mean_nearest_neighbor_km": 1.144,
+      "hubs_outside_boundary": [
+        "68efcc5d579bc900243498b0"
+      ],
+      "color": "#c026d3"
+    },
+    {
+      "cluster_id": "shaikpet",
+      "name": "Shaikpet",
+      "display_name": "Shaikpet",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Shaikpet"
+      ],
+      "boundary": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                78.414356,
+                17.398737
+              ],
+              [
+                78.402082,
+                17.395952
+              ],
+              [
+                78.4224735,
+                17.3995154
+              ],
+              [
+                78.4148011,
+                17.3991591
+              ],
+              [
+                78.414356,
+                17.398737
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                78.4125695,
+                17.3985858
+              ],
+              [
+                78.4210937,
+                17.4051256
+              ],
+              [
+                78.4350415,
+                17.4059444
+              ],
+              [
+                78.4225105,
+                17.4156085
+              ],
+              [
+                78.4082627,
+                17.4311684
+              ],
+              [
+                78.3718702,
+                17.4203581
+              ],
+              [
+                78.37875,
+                17.414
+              ],
+              [
+                78.3810925,
+                17.4100684
+              ],
+              [
+                78.3836482,
+                17.4073104
+              ],
+              [
+                78.3876725,
+                17.4072417
+              ],
+              [
+                78.388792,
+                17.40631
+              ],
+              [
+                78.3887674,
+                17.4034457
+              ],
+              [
+                78.3869605,
+                17.4036492
+              ],
+              [
+                78.3867989,
+                17.3978561
+              ],
+              [
+                78.4125695,
+                17.3985858
+              ]
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Shaikpet",
+      "hub_ids": [
+        "68efcc5d579bc900243497c9",
+        "69cc1478095ac20024cc2d24",
+        "68efcc5d579bc90024349804",
+        "68efcc5d579bc90024349823",
+        "68efcc5d579bc90024349844",
+        "69cc1478095ac20024cc2d23",
+        "68efcc5d579bc90024349896",
+        "68efcc5d579bc90024349897",
+        "68efcc5d579bc90024349898",
+        "68efcc5d579bc9002434989d",
+        "69cc1478095ac20024cc2d31",
+        "69cc1478095ac20024cc2d32"
+      ],
+      "hub_count": 12,
+      "active_hub_count": 12,
+      "status_counts": {
+        "Live": 12
+      },
+      "region_counts": {
+        "southern_hyd": 12
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 12
+      },
+      "center_lat": 17.4131488,
+      "center_lng": 78.40206,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 13.7792,
+      "service_area_union_km2": 6.1524,
+      "bbox": [
+        17.395952,
+        78.3718702,
+        17.4311684,
+        78.4350415
+      ],
+      "max_hub_distance_km": 2.489,
+      "mean_nearest_neighbor_km": 0.839,
+      "hubs_outside_boundary": [],
+      "color": "#059669"
+    },
+    {
+      "cluster_id": "tarnaka",
+      "name": "Tarnaka",
+      "display_name": "Tarnaka",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Tarnaka"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.52758,
+              17.4378481
+            ],
+            [
+              78.5286958,
+              17.4113148
+            ],
+            [
+              78.5266358,
+              17.391576
+            ],
+            [
+              78.569895,
+              17.394279
+            ],
+            [
+              78.5789073,
+              17.4006676
+            ],
+            [
+              78.5874047,
+              17.3995209
+            ],
+            [
+              78.5943571,
+              17.3990295
+            ],
+            [
+              78.5922112,
+              17.4192588
+            ],
+            [
+              78.5760748,
+              17.443662
+            ],
+            [
+              78.5582218,
+              17.4400591
+            ],
+            [
+              78.52758,
+              17.4378481
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Tarnaka",
+      "hub_ids": [
+        "68efcc5d579bc90024349884",
+        "68efcc5d579bc90024349885",
+        "68efcc5d579bc90024349886",
+        "68efcc5d579bc90024349887",
+        "68efcc5d579bc90024349888",
+        "68efcc5d579bc900243498ad",
+        "68efcc5d579bc900243498ba",
+        "68efcc5d579bc900243498bb",
+        "68efcc5d579bc900243498d6"
+      ],
+      "hub_count": 9,
+      "active_hub_count": 7,
+      "status_counts": {
+        "Live": 7,
+        "Not Live": 2
+      },
+      "region_counts": {
+        "eastern_hyd": 9
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 9
+      },
+      "center_lat": 17.4165453,
+      "center_lng": 78.55812,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 32.7585,
+      "service_area_union_km2": 7.6465,
+      "bbox": [
+        17.391576,
+        78.5266358,
+        17.443662,
+        78.5943571
+      ],
+      "max_hub_distance_km": 3.583,
+      "mean_nearest_neighbor_km": 1.218,
+      "hubs_outside_boundary": [],
+      "color": "#0284c7"
+    },
+    {
+      "cluster_id": "attapur",
+      "name": "Attapur",
+      "display_name": "Attapur",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Attapur"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.4109444,
+              17.3706804
+            ],
+            [
+              78.4079838,
+              17.350815
+            ],
+            [
+              78.4069111,
+              17.3426636
+            ],
+            [
+              78.4294406,
+              17.3486444
+            ],
+            [
+              78.4404708,
+              17.3657656
+            ],
+            [
+              78.430042,
+              17.3738753
+            ],
+            [
+              78.424248,
+              17.3745306
+            ],
+            [
+              78.422274,
+              17.3719913
+            ],
+            [
+              78.4109444,
+              17.3706804
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Attapur",
+      "hub_ids": [
+        "6a036c3a20c29a0025e7cc29",
+        "68efcc5d579bc900243498e3",
+        "68efcc5d579bc900243498e4",
+        "69de64323982080024028e90",
+        "68efcc5d579bc900243498e6",
+        "69cc1478095ac20024cc2d2d",
+        "6a036c3a20c29a0025e7cc3b"
+      ],
+      "hub_count": 7,
+      "active_hub_count": 7,
+      "status_counts": {
+        "Live": 7
+      },
+      "region_counts": {
+        "southern_hyd": 7
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 7
+      },
+      "center_lat": 17.3594655,
+      "center_lng": 78.4219892,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 8.0406,
+      "service_area_union_km2": 4.44,
+      "bbox": [
+        17.3426636,
+        78.4069111,
+        17.3745306,
+        78.4404708
+      ],
+      "max_hub_distance_km": 1.568,
+      "mean_nearest_neighbor_km": 0.773,
+      "hubs_outside_boundary": [],
+      "color": "#7e22ce"
+    },
+    {
+      "cluster_id": "kali_mandir",
+      "name": "Kali_Mandir",
+      "display_name": "Kali Mandir",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Kali_Mandir",
+        "Kali_mandir"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3693282,
+              17.3632953
+            ],
+            [
+              78.3690707,
+              17.355185
+            ],
+            [
+              78.3877393,
+              17.3438386
+            ],
+            [
+              78.3926744,
+              17.3465828
+            ],
+            [
+              78.4066649,
+              17.3525634
+            ],
+            [
+              78.4085965,
+              17.3718965
+            ],
+            [
+              78.391301,
+              17.376484
+            ],
+            [
+              78.3693282,
+              17.3632953
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Kali_mandir",
+      "hub_ids": [
+        "68efcc5d579bc900243497c4",
+        "68efcc5d579bc9002434983c",
+        "68efcc5d579bc9002434983d",
+        "68efcc5d579bc900243498e2",
+        "68efcc5d579bc900243498e7",
+        "68efcc5d579bc900243498e8",
+        "68efcc5d579bc900243498ef"
+      ],
+      "hub_count": 7,
+      "active_hub_count": 7,
+      "status_counts": {
+        "Live": 7
+      },
+      "region_counts": {
+        "southern_hyd": 7
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 7
+      },
+      "center_lat": 17.3605804,
+      "center_lng": 78.3900656,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 10.3011,
+      "service_area_union_km2": 4.3755,
+      "bbox": [
+        17.3438386,
+        78.3690707,
+        17.376484,
+        78.4085965
+      ],
+      "max_hub_distance_km": 1.819,
+      "mean_nearest_neighbor_km": 0.934,
+      "hubs_outside_boundary": [],
+      "color": "#be123c"
+    },
+    {
+      "cluster_id": "moula_ali",
+      "name": "Moula_Ali",
+      "display_name": "Moula Ali",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Moula_Ali",
+        "Moula_ali"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.529153,
+              17.4733822
+            ],
+            [
+              78.5264922,
+              17.4626569
+            ],
+            [
+              78.5264922,
+              17.4405493
+            ],
+            [
+              78.5591079,
+              17.4403855
+            ],
+            [
+              78.5894061,
+              17.4412044
+            ],
+            [
+              78.5782481,
+              17.4584812
+            ],
+            [
+              78.5668326,
+              17.4780488
+            ],
+            [
+              78.5517893,
+              17.4823258
+            ],
+            [
+              78.5481215,
+              17.4810778
+            ],
+            [
+              78.529153,
+              17.4733822
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Moula_ali",
+      "hub_ids": [
+        "68efcc5d579bc900243498ae",
+        "68efcc5d579bc900243498af",
+        "68efcc5d579bc900243498b1",
+        "68efcc5d579bc900243498b2",
+        "68efcc5d579bc900243498b9",
+        "68efcc5d579bc900243498d7",
+        "68efcc5d579bc900243498f3"
+      ],
+      "hub_count": 7,
+      "active_hub_count": 6,
+      "status_counts": {
+        "Live": 6,
+        "Not Live": 1
+      },
+      "region_counts": {
+        "eastern_hyd": 7
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 7
+      },
+      "center_lat": 17.4581245,
+      "center_lng": 78.5531975,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 22.7806,
+      "service_area_union_km2": 7.0662,
+      "bbox": [
+        17.4403855,
+        78.5264922,
+        17.4823258,
+        78.5894061
+      ],
+      "max_hub_distance_km": 2.846,
+      "mean_nearest_neighbor_km": 1.453,
+      "hubs_outside_boundary": [],
+      "color": "#c2410c"
+    },
+    {
+      "cluster_id": "puppalguda",
+      "name": "Puppalguda",
+      "display_name": "Puppalguda",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Puppalguda"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3653241,
+              17.4036214
+            ],
+            [
+              78.3535612,
+              17.4018687
+            ],
+            [
+              78.3525551,
+              17.3954084
+            ],
+            [
+              78.3547453,
+              17.3912538
+            ],
+            [
+              78.3562693,
+              17.3807694
+            ],
+            [
+              78.3679631,
+              17.3809742
+            ],
+            [
+              78.3735471,
+              17.3889404
+            ],
+            [
+              78.3781131,
+              17.3884484
+            ],
+            [
+              78.3724911,
+              17.3975394
+            ],
+            [
+              78.3720401,
+              17.4004064
+            ],
+            [
+              78.3718261,
+              17.4027404
+            ],
+            [
+              78.3653241,
+              17.4036214
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Puppalguda",
+      "hub_ids": [
+        "68efcc5d579bc900243497c5",
+        "68efcc5d579bc900243497c6",
+        "68efcc5d579bc900243497f3",
+        "68efcc5d579bc900243497f4",
+        "68efcc5d579bc90024349805",
+        "68efcc5d579bc90024349806",
+        "68efcc5d579bc90024349807"
+      ],
+      "hub_count": 7,
+      "active_hub_count": 7,
+      "status_counts": {
+        "Live": 7
+      },
+      "region_counts": {
+        "southern_hyd": 7
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 7
+      },
+      "center_lat": 17.3925256,
+      "center_lng": 78.3637933,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 4.8059,
+      "service_area_union_km2": 3.308,
+      "bbox": [
+        17.3807694,
+        78.3525551,
+        17.4036214,
+        78.3781131
+      ],
+      "max_hub_distance_km": 0.992,
+      "mean_nearest_neighbor_km": 0.621,
+      "hubs_outside_boundary": [],
+      "color": "#1d4ed8"
+    },
+    {
+      "cluster_id": "wipro_circle",
+      "name": "Wipro_Circle",
+      "display_name": "Wipro Circle",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Wipro_Circle"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.321865,
+              17.4314057
+            ],
+            [
+              78.3221448,
+              17.4238508
+            ],
+            [
+              78.3367246,
+              17.4244858
+            ],
+            [
+              78.3488588,
+              17.4310161
+            ],
+            [
+              78.3508975,
+              17.4448241
+            ],
+            [
+              78.3483012,
+              17.4474138
+            ],
+            [
+              78.3229385,
+              17.4488467
+            ],
+            [
+              78.3031756,
+              17.4319375
+            ],
+            [
+              78.3095162,
+              17.4288057
+            ],
+            [
+              78.321865,
+              17.4314057
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Wipro_Circle",
+      "hub_ids": [
+        "69497ec5ced32d002756041d",
+        "68efcc5d579bc9002434983a",
+        "68efcc5d579bc9002434983b",
+        "68efcc5d579bc900243498e9",
+        "68efcc5d579bc900243498ea",
+        "69497ec5ced32d002756041e",
+        "6a036c3a20c29a0025e7cc46"
+      ],
+      "hub_count": 7,
+      "active_hub_count": 6,
+      "status_counts": {
+        "Live": 6,
+        "To be made live": 1
+      },
+      "region_counts": {
+        "southern_hyd": 7
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 7
+      },
+      "center_lat": 17.4367763,
+      "center_lng": 78.330409,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 9.4397,
+      "service_area_union_km2": 2.2814,
+      "bbox": [
+        17.4238508,
+        78.3031756,
+        17.4488467,
+        78.3508975
+      ],
+      "max_hub_distance_km": 2.089,
+      "mean_nearest_neighbor_km": 0.808,
+      "hubs_outside_boundary": [],
+      "color": "#15803d"
+    },
+    {
+      "cluster_id": "manikonda",
+      "name": "Manikonda",
+      "display_name": "Manikonda",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Manikonda"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3699014,
+              17.4067314
+            ],
+            [
+              78.3725196,
+              17.4029434
+            ],
+            [
+              78.3765108,
+              17.3948144
+            ],
+            [
+              78.3798686,
+              17.3943023
+            ],
+            [
+              78.3909244,
+              17.3933295
+            ],
+            [
+              78.3863591,
+              17.3975986
+            ],
+            [
+              78.3865951,
+              17.403644
+            ],
+            [
+              78.3884702,
+              17.4037041
+            ],
+            [
+              78.3883118,
+              17.4061267
+            ],
+            [
+              78.3865953,
+              17.4069562
+            ],
+            [
+              78.3841921,
+              17.4063628
+            ],
+            [
+              78.38032,
+              17.409618
+            ],
+            [
+              78.372112,
+              17.419139
+            ],
+            [
+              78.361018,
+              17.41918
+            ],
+            [
+              78.3645157,
+              17.4122187
+            ],
+            [
+              78.3699014,
+              17.4067314
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Manikonda",
+      "hub_ids": [
+        "68efcc5d579bc900243497c7",
+        "68efcc5d579bc900243497ca",
+        "68efcc5d579bc900243497cb",
+        "68efcc5d579bc900243497f7",
+        "68efcc5d579bc90024349841",
+        "68efcc5d579bc90024349842"
+      ],
+      "hub_count": 6,
+      "active_hub_count": 6,
+      "status_counts": {
+        "Live": 6
+      },
+      "region_counts": {
+        "southern_hyd": 6
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 6
+      },
+      "center_lat": 17.4065109,
+      "center_lng": 78.3761482,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 3.944,
+      "service_area_union_km2": 2.6081,
+      "bbox": [
+        17.3933295,
+        78.361018,
+        17.41918,
+        78.3909244
+      ],
+      "max_hub_distance_km": 1.47,
+      "mean_nearest_neighbor_km": 0.688,
+      "hubs_outside_boundary": [],
+      "color": "#0e7490"
+    },
+    {
+      "cluster_id": "nanakramguda",
+      "name": "Nanakramguda",
+      "display_name": "Nanakramguda",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Nanakramguda"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.345444,
+              17.427219
+            ],
+            [
+              78.337375,
+              17.422879
+            ],
+            [
+              78.334801,
+              17.414608
+            ],
+            [
+              78.336174,
+              17.40609
+            ],
+            [
+              78.341324,
+              17.406582
+            ],
+            [
+              78.355829,
+              17.422388
+            ],
+            [
+              78.345444,
+              17.427219
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Nanakramguda",
+      "hub_ids": [
+        "68efcc5d579bc900243497d1",
+        "68efcc5d579bc900243497da",
+        "68efcc5d579bc900243497fa",
+        "68efcc5d579bc90024349802",
+        "68efcc5d579bc90024349824",
+        "68efcc5d579bc90024349843"
+      ],
+      "hub_count": 6,
+      "active_hub_count": 6,
+      "status_counts": {
+        "Live": 6
+      },
+      "region_counts": {
+        "southern_hyd": 6
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 6
+      },
+      "center_lat": 17.4173227,
+      "center_lng": 78.3433734,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 2.9612,
+      "service_area_union_km2": 1.0926,
+      "bbox": [
+        17.40609,
+        78.334801,
+        17.427219,
+        78.355829
+      ],
+      "max_hub_distance_km": 1.115,
+      "mean_nearest_neighbor_km": 0.554,
+      "hubs_outside_boundary": [],
+      "color": "#be185d"
+    },
+    {
+      "cluster_id": "kokapet",
+      "name": "Kokapet",
+      "display_name": "Kokapet",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Kokapet",
+        "kokapet"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.3286364,
+              17.3976696
+            ],
+            [
+              78.3347306,
+              17.3849737
+            ],
+            [
+              78.3508666,
+              17.388004
+            ],
+            [
+              78.3534416,
+              17.403157
+            ],
+            [
+              78.3485496,
+              17.406351
+            ],
+            [
+              78.3286364,
+              17.3976696
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Kokapet",
+      "hub_ids": [
+        "68efcc5d579bc900243497ce",
+        "68efcc5d579bc900243497d0",
+        "68efcc5d579bc900243497f2",
+        "68efcc5d579bc900243497f9",
+        "68efcc5d579bc90024349801"
+      ],
+      "hub_count": 5,
+      "active_hub_count": 5,
+      "status_counts": {
+        "Live": 5
+      },
+      "region_counts": {
+        "southern_hyd": 5
+      },
+      "cluster_mapping_counts": {
+        "competitive_cluster": 5
+      },
+      "center_lat": 17.3952569,
+      "center_lng": 78.342181,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 4.0774,
+      "service_area_union_km2": 1.6373,
+      "bbox": [
+        17.3849737,
+        78.3286364,
+        17.406351,
+        78.3534416
+      ],
+      "max_hub_distance_km": 1.052,
+      "mean_nearest_neighbor_km": 0.68,
+      "hubs_outside_boundary": [],
+      "color": "#4d7c0f"
+    },
+    {
+      "cluster_id": "rajendra_nagar",
+      "name": "Rajendra_Nagar",
+      "display_name": "Rajendra Nagar",
+      "source": "attribute+boundary",
+      "inferred": false,
+      "name_variants": [
+        "Rajendra_Nagar",
+        "Rajendranagar"
+      ],
+      "boundary": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.4161662,
+              17.3294468
+            ],
+            [
+              78.4178828,
+              17.3184673
+            ],
+            [
+              78.4298991,
+              17.3186311
+            ],
+            [
+              78.4298991,
+              17.3291191
+            ],
+            [
+              78.4161662,
+              17.3294468
+            ]
+          ]
+        ]
+      },
+      "boundary_name": "Rajendranagar",
+      "hub_ids": [
+        "68efcc5d579bc9002434981d"
+      ],
+      "hub_count": 1,
+      "active_hub_count": 1,
+      "status_counts": {
+        "Live": 1
+      },
+      "region_counts": {
+        "southern_hyd": 1
+      },
+      "cluster_mapping_counts": {
+        "non_competitive_cluster": 1
+      },
+      "center_lat": 17.324033,
+      "center_lng": 78.4234044,
+      "center_method": "boundary_centroid",
+      "boundary_area_km2": 1.6303,
+      "service_area_union_km2": 0.304,
+      "bbox": [
+        17.3184673,
+        78.4161662,
+        17.3294468,
+        78.4298991
+      ],
+      "max_hub_distance_km": 0.246,
+      "mean_nearest_neighbor_km": null,
+      "hubs_outside_boundary": [],
+      "color": "#a16207"
+    }
+  ]
+}

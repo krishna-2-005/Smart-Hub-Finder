@@ -1,0 +1,1165 @@
+{
+  "source": {
+    "file_name": "Akhil Copy.kml",
+    "size_bytes": 6236892,
+    "sha256": "e78c8ed5e549e3ea07b4f0d787f91dbaa4a4533782ac0da6ee730120cbfd82a9",
+    "line_count": 163449,
+    "processed_at": "2026-10-15T05:05:13+00:00",
+    "document_name": "Akhil Copy",
+    "style_count": 46
+  },
+  "repair": {
+    "encoding": "utf-8",
+    "had_bom": false,
+    "valid_before": false,
+    "parse_error_before": "xmlParseEntityRef: no name, line 102639, column 47 (<string>, line 102639)",
+    "valid_after": true,
+    "parse_error_after": null,
+    "coordinates_unchanged": true,
+    "coordinate_blocks": 2211,
+    "total_changes": 361,
+    "changes_by_kind": {
+      "unescaped_ampersand": 361
+    },
+    "first_change": {
+      "line": 102639,
+      "column": 46,
+      "kind": "unescaped_ampersand",
+      "original": "&",
+      "replacement": "&amp;",
+      "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+    },
+    "distinct_contexts": [
+      {
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">",
+        "occurrences": 361
+      }
+    ],
+    "sample_changes": [
+      {
+        "line": 102639,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 102812,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 102990,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 103159,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 103333,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 103516,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 103692,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 103865,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 104048,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      },
+      {
+        "line": 104217,
+        "column": 46,
+        "kind": "unescaped_ampersand",
+        "original": "&",
+        "replacement": "&amp;",
+        "context": "<Data name=\"Competiton OB Hotspots & remarks\">"
+      }
+    ]
+  },
+  "folders": [
+    {
+      "name": "Directions from 1-284/1, Sri Aurobindo Colony, Hyderabad, Miyapur, Telangana 500049, India to",
+      "path": "Directions from 1-284/1, Sri Aurobindo Colony, Hyderabad, Miyapur, Telangana 500049, India to",
+      "source_line": 517,
+      "placemark_count": 1421,
+      "geometry_counts": {
+        "Point": 1413,
+        "LineString": 8
+      },
+      "categories": {
+        "demand_point": 1413,
+        "route_line": 8
+      },
+      "attribute_fields": [
+        "CUMULATIVE_DELS",
+        "CUMULATIVE_DEL_CONTRIBUTION_PERC",
+        "DELS",
+        "DEL_BUCKET",
+        "DEL_CONTRIBUTION_PERC",
+        "INSTA_HUB",
+        "LATITUDE",
+        "LIVE",
+        "LONGITUDE",
+        "MAX_DEL",
+        "MAX_RANK",
+        "PLUS_CODE_280",
+        "RANK",
+        "USERS"
+      ]
+    },
+    {
+      "name": "PMF - high.csv",
+      "path": "PMF - high.csv",
+      "source_line": 81418,
+      "placemark_count": 360,
+      "geometry_counts": {
+        "Point": 360
+      },
+      "categories": {
+        "demand_point": 360
+      },
+      "attribute_fields": [
+        "CUMULATIVE_DELS",
+        "CUMULATIVE_DEL_CONTRIBUTION_PERC",
+        "DELS",
+        "DEL_BUCKET",
+        "DEL_CONTRIBUTION_PERC",
+        "INSTA_HUB",
+        "LATITUDE",
+        "LONGITUDE",
+        "MAX_DEL",
+        "MAX_RANK",
+        "PLUS_CODE_280",
+        "RANK",
+        "REPORTING_CITY",
+        "USERS"
+      ]
+    },
+    {
+      "name": "Cluster_layer",
+      "path": "Cluster_layer",
+      "source_line": 100867,
+      "placemark_count": 27,
+      "geometry_counts": {
+        "Polygon": 24,
+        "MultiGeometry": 2,
+        "Point": 1
+      },
+      "categories": {
+        "cluster_boundary": 26,
+        "unclassified": 1
+      },
+      "attribute_fields": []
+    },
+    {
+      "name": "Lines",
+      "path": "Lines",
+      "source_line": 101537,
+      "placemark_count": 3,
+      "geometry_counts": {
+        "Polygon": 3
+      },
+      "categories": {
+        "region": 3
+      },
+      "attribute_fields": [
+        "Cluster_name"
+      ]
+    },
+    {
+      "name": "Snabbit live pluscodes - Hyderabad.csv",
+      "path": "Snabbit live pluscodes - Hyderabad.csv",
+      "source_line": 101640,
+      "placemark_count": 9,
+      "geometry_counts": {
+        "Point": 9
+      },
+      "categories": {
+        "competitor_location": 9
+      },
+      "attribute_fields": [
+        "#",
+        "--map mein upload karke dikhana if we have missed anything",
+        "City",
+        "Latitude",
+        "Longitude",
+        "Plus Code",
+        "unnamed (1)"
+      ]
+    },
+    {
+      "name": "Rough View - Sheet10.csv",
+      "path": "Rough View - Sheet10.csv",
+      "source_line": 101940,
+      "placemark_count": 25,
+      "geometry_counts": {
+        "Point": 25
+      },
+      "categories": {
+        "screening_record": 25
+      },
+      "attribute_fields": [
+        "Name",
+        "Screening Lat-long",
+        "Screening hubs",
+        "unnamed (1)"
+      ]
+    },
+    {
+      "name": "IH Hyd - Competition Intelligence - Sheet44.csv",
+      "path": "IH Hyd - Competition Intelligence - Sheet44.csv",
+      "source_line": 102543,
+      "placemark_count": 361,
+      "geometry_counts": {
+        "Polygon": 361
+      },
+      "categories": {
+        "hub": 361
+      },
+      "attribute_fields": [
+        "APC",
+        "APC_11hr",
+        "APC_6hr",
+        "Cluster",
+        "Cluster Mapping",
+        "Competition Present",
+        "Competiton OB Hotspots & remarks",
+        "HH",
+        "Hub",
+        "Hub ID",
+        "Hub status",
+        "L7_DEL",
+        "L7_util",
+        "Line",
+        "New polygon",
+        "P2 hub 2",
+        "P2 hub1",
+        "P2 status",
+        "PMF",
+        "Penetration mapping",
+        "Priority for cluster",
+        "Pronto Deliveries",
+        "Pronto Live",
+        "Pronto Number of partners",
+        "Pronto Util",
+        "Pronto marketing activities",
+        "Snabbit Competitive Date",
+        "Snabbit Deliveries",
+        "Snabbit Live",
+        "Snabbit Marketing activities",
+        "Snabbit Number of partners",
+        "Snabbit Util",
+        "Society/ Non- society",
+        "Type of Competition",
+        "Union",
+        "hub IDs status",
+        "hub name status",
+        "new hub ID",
+        "pronto Competitive Date",
+        "unnamed (1)",
+        "unnamed (2)",
+        "unnamed (3)",
+        "unnamed (4)",
+        "unnamed (5)",
+        "unnamed (6)"
+      ]
+    },
+    {
+      "name": "Directions from 17.412498, 78.411452 to CC6C+9J5, Lane Number 3, MLA Colony, Banjara Hills, Hyderabad, Telangana 500096, India",
+      "path": "Directions from 17.412498, 78.411452 to CC6C+9J5, Lane Number 3, MLA Colony, Banjara Hills, Hyderabad, Telangana 500096, India",
+      "source_line": 163310,
+      "placemark_count": 3,
+      "geometry_counts": {
+        "LineString": 1,
+        "Point": 2
+      },
+      "categories": {
+        "route_line": 1,
+        "route_waypoint": 2
+      },
+      "attribute_fields": []
+    },
+    {
+      "name": "Untitled layer",
+      "path": "Untitled layer",
+      "source_line": 163445,
+      "placemark_count": 0,
+      "geometry_counts": {},
+      "categories": {},
+      "attribute_fields": []
+    }
+  ],
+  "placemark_count": 2209,
+  "geometry_counts": {
+    "Point": 1810,
+    "LineString": 9,
+    "Polygon": 388,
+    "MultiGeometry": 2
+  },
+  "category_counts": {
+    "demand_point": 1773,
+    "route_line": 9,
+    "cluster_boundary": 26,
+    "unclassified": 1,
+    "region": 3,
+    "competitor_location": 9,
+    "screening_record": 25,
+    "hub": 361,
+    "route_waypoint": 2
+  },
+  "categories": [
+    {
+      "category": "demand_point",
+      "label": "Demand hotspot (PMF plus-code cell)",
+      "count": 1773,
+      "inferred": true,
+      "pii": false,
+      "rule": "matched attributes ['PLUS_CODE_280', 'DELS'], geometry ['Point']"
+    },
+    {
+      "category": "route_line",
+      "label": "Drawn route / direction line",
+      "count": 9,
+      "inferred": false,
+      "pii": false,
+      "rule": "matched geometry ['LineString', 'MultiLineString']"
+    },
+    {
+      "category": "cluster_boundary",
+      "label": "Cluster boundary",
+      "count": 26,
+      "inferred": false,
+      "pii": false,
+      "rule": "polygon whose name matches /(?i)[ _-]?cluster$/"
+    },
+    {
+      "category": "unclassified",
+      "label": "Unclassified",
+      "count": 1,
+      "inferred": false,
+      "pii": false,
+      "rule": "no rule matched"
+    },
+    {
+      "category": "region",
+      "label": "Service line / region",
+      "count": 3,
+      "inferred": false,
+      "pii": false,
+      "rule": "polygon in folder matching /^Lines$/"
+    },
+    {
+      "category": "competitor_location",
+      "label": "Competitor live location (Snabbit)",
+      "count": 9,
+      "inferred": true,
+      "pii": false,
+      "rule": "matched folder /(?i)snabbit/"
+    },
+    {
+      "category": "screening_record",
+      "label": "Screening record (contains personal names - excluded from maps and exports)",
+      "count": 25,
+      "inferred": false,
+      "pii": true,
+      "rule": "matched attributes ['Screening hubs']"
+    },
+    {
+      "category": "hub",
+      "label": "Hub",
+      "count": 361,
+      "inferred": false,
+      "pii": false,
+      "rule": "has attribute(s) ['Hub ID']"
+    },
+    {
+      "category": "route_waypoint",
+      "label": "Directions waypoint",
+      "count": 2,
+      "inferred": false,
+      "pii": false,
+      "rule": "matched folder /^Directions from/, geometry ['Point']"
+    }
+  ],
+  "hubs": {
+    "total": 361,
+    "valid_location": 361,
+    "invalid_location": 0,
+    "active": 348,
+    "inactive": 13,
+    "status_unknown": 0,
+    "status_counts": {
+      "Live": 348,
+      "Not Live": 10,
+      "To be made live": 3
+    },
+    "location_methods": {
+      "service_area_centroid": 360,
+      "service_area_interior_point": 1
+    },
+    "with_service_area": 361,
+    "unique_hub_ids": 361,
+    "region_counts": {
+      "southern_hyd": 139,
+      "northern_hyd": 122,
+      "eastern_hyd": 100
+    },
+    "hub_type_available": false
+  },
+  "clusters": {
+    "total": 26,
+    "with_hubs": 26,
+    "with_boundary": 26,
+    "boundary_polygons_in_source": 26,
+    "method": "explicit cluster attribute + cluster boundary polygons",
+    "clusters_without_boundary": [],
+    "boundaries_without_hubs": [],
+    "raw_cluster_values": 34,
+    "hub_counts": {
+      "Kondapur": 28,
+      "Borabanda": 25,
+      "Kukatpally": 24,
+      "Miyapur": 22,
+      "Nallagandla": 22,
+      "LB_Nagar": 21,
+      "Kompally": 20,
+      "Madhura_Nagar": 19,
+      "Hitech_City": 18,
+      "Bachupally": 16,
+      "Kachiguda": 16,
+      "Ramchandrapuram": 16,
+      "Bowenpally": 15,
+      "Mehdipatnam": 13,
+      "Sainikpuri": 12,
+      "Shaikpet": 12,
+      "Tarnaka": 9,
+      "Attapur": 7,
+      "Kali_Mandir": 7,
+      "Moula_Ali": 7,
+      "Puppalguda": 7,
+      "Wipro_Circle": 7,
+      "Manikonda": 6,
+      "Nanakramguda": 6,
+      "Kokapet": 5,
+      "Rajendra_Nagar": 1
+    }
+  },
+  "regions": [
+    {
+      "id": "south",
+      "name": "South",
+      "label": "Line 2",
+      "hub_line": "southern_hyd",
+      "note": "Inferred: region polygons named South/East/North are matched to the hub 'Line' attribute values southern_hyd/eastern_hyd/northern_hyd by compass direction.",
+      "color": "#c2410c",
+      "hubs_inside_polygon": 139,
+      "hubs_with_line_attribute": 139,
+      "line_hubs_inside_polygon": 137
+    },
+    {
+      "id": "east",
+      "name": "East",
+      "label": "Line 3",
+      "hub_line": "eastern_hyd",
+      "note": "Inferred: region polygons named South/East/North are matched to the hub 'Line' attribute values southern_hyd/eastern_hyd/northern_hyd by compass direction.",
+      "color": "#0369a1",
+      "hubs_inside_polygon": 99,
+      "hubs_with_line_attribute": 100,
+      "line_hubs_inside_polygon": 99
+    },
+    {
+      "id": "north",
+      "name": "North",
+      "label": null,
+      "hub_line": "northern_hyd",
+      "note": "Inferred: region polygons named South/East/North are matched to the hub 'Line' attribute values southern_hyd/eastern_hyd/northern_hyd by compass direction.",
+      "color": "#7e22ce",
+      "hubs_inside_polygon": 120,
+      "hubs_with_line_attribute": 122,
+      "line_hubs_inside_polygon": 118
+    }
+  ],
+  "layers": {
+    "demand_points": 1773,
+    "demand_points_shared_plus_codes": 0,
+    "competitor_locations": 9,
+    "source_route_lines": 9,
+    "screening_records_excluded_pii": 25
+  },
+  "quality": {
+    "duplicate_hub_ids": {},
+    "duplicate_hub_names": {},
+    "duplicate_locations": [],
+    "duplicate_location_threshold_m": 10.0,
+    "missing_hub_ids": [],
+    "missing_hub_names": [],
+    "invalid_locations": [],
+    "unassigned_hubs": [],
+    "isolated_hubs": [
+      {
+        "hub_id": "68efcc5d579bc9002434981d",
+        "name": "provident_kenworth",
+        "cluster": "Rajendra_Nagar",
+        "reason": "only hub in its cluster",
+        "nearest_same_cluster_km": null,
+        "nearest_any_km": 2.556
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498b0",
+        "name": "anandbagh",
+        "cluster": "Sainikpuri",
+        "reason": "nearest hub in same cluster is 3.23 km away (> 3.0 km)",
+        "nearest_same_cluster_km": 3.227,
+        "nearest_any_km": 1.045
+      },
+      {
+        "hub_id": "6980e9ccbaa1520023db03a5",
+        "name": "hyderabad_centroid_hub",
+        "cluster": "LB_Nagar",
+        "reason": "nearest hub in same cluster is 10.06 km away (> 3.0 km)",
+        "nearest_same_cluster_km": 10.055,
+        "nearest_any_km": 0.649
+      }
+    ],
+    "isolation_threshold_km": 3.0,
+    "cluster_boundary_mismatches": [
+      {
+        "hub_id": "68efcc5d579bc90024349826",
+        "name": "jubilee_enclave_rd",
+        "assigned_cluster": "Kondapur",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.114
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434980d",
+        "name": "divine_allura",
+        "assigned_cluster": "Miyapur",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.074
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349834",
+        "name": "lingampally_rd",
+        "assigned_cluster": "Miyapur",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.213
+      },
+      {
+        "hub_id": "69c41f70bf901e002450b2bc",
+        "name": "hillside_highrise",
+        "assigned_cluster": "Miyapur",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.511
+      },
+      {
+        "hub_id": "6980e9ccbaa1520023db03a5",
+        "name": "hyderabad_centroid_hub",
+        "assigned_cluster": "LB_Nagar",
+        "location_inside_cluster_boundaries": [
+          "Shaikpet"
+        ],
+        "distance_outside_assigned_boundary_km": 9.184
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349825",
+        "name": "anjaiah_nagar",
+        "assigned_cluster": "Hitech_City",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.024
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498cc",
+        "name": "cluster_serilingampally",
+        "assigned_cluster": "Ramchandrapuram",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.305
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498cd",
+        "name": "sridham_hills",
+        "assigned_cluster": "Ramchandrapuram",
+        "location_inside_cluster_boundaries": [],
+        "distance_outside_assigned_boundary_km": 0.048
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498b0",
+        "name": "anandbagh",
+        "assigned_cluster": "Sainikpuri",
+        "location_inside_cluster_boundaries": [
+          "Moula_Ali"
+        ],
+        "distance_outside_assigned_boundary_km": 2.397
+      }
+    ],
+    "overlapping_service_areas": [
+      {
+        "hub_a": "68efcc5d579bc900243497f8",
+        "name_a": "surya_towers",
+        "hub_b": "68efcc5d579bc9002434982a",
+        "name_b": "auro_realty",
+        "overlap_km2": 0.0031,
+        "overlap_pct_of_smaller": 1.1
+      },
+      {
+        "hub_a": "68efcc5d579bc90024349838",
+        "name_a": "sln_phase3",
+        "hub_b": "68efcc5d579bc90024349839",
+        "name_b": "sln_phase1",
+        "overlap_km2": 0.0093,
+        "overlap_pct_of_smaller": 1.5
+      },
+      {
+        "hub_a": "6a036c3a20c29a0025e7cc40",
+        "name_a": "svs_gardenia",
+        "hub_b": "6a2ba19548d99f00249dc0e9",
+        "name_b": "aparna_serenity",
+        "overlap_km2": 0.0046,
+        "overlap_pct_of_smaller": 1.3
+      }
+    ],
+    "hubs_with_issues": [
+      {
+        "hub_id": "68efcc5d579bc900243497cf",
+        "name": "radha_krishna_rd",
+        "source_line": 104645,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈12 m, 95% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243497d5",
+        "name": "himagiri_heights",
+        "source_line": 105672,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈21 m, 92% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "69bc37716c4e72002539e0a6",
+        "name": "acz_block",
+        "source_line": 108747,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈333 m, 58% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "69c41f70bf901e002450b2b5",
+        "name": "brigade_citadel",
+        "source_line": 109650,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈1 m, 99% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243497ee",
+        "name": "vitial_rao_nagar",
+        "source_line": 110013,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈521 m, 45% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434980e",
+        "name": "botanical_garden_2",
+        "source_line": 115529,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈2 m, 99% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434982a",
+        "name": "auro_realty",
+        "source_line": 120217,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈52 m, 86% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434982e",
+        "name": "prism_mall",
+        "source_line": 120897,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈708 m, 40% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349839",
+        "name": "sln_phase1",
+        "source_line": 122727,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈69 m, 84% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "69cc1478095ac20024cc2d26",
+        "name": "indis_prospera",
+        "source_line": 123899,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈528 m, 76% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349846",
+        "name": "kailash_apartments",
+        "source_line": 124925,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈96 m, 97% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349858",
+        "name": "kukatpally_lake",
+        "source_line": 127942,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈702 m, 39% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434985a",
+        "name": "sangeetha_nagarã¢",
+        "source_line": 128273,
+        "issues": [
+          "hub name contains garbled encoding characters ['ã¢']; kept unchanged in 'name', removed from 'display_name'"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434985f",
+        "name": "nestila_apartment",
+        "source_line": 129112,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈170 m, 88% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349865",
+        "name": "kousalya_colony",
+        "source_line": 130126,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈324 m, 90% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "6a036c3a20c29a0025e7cc2e",
+        "name": "gunrock_enclave_rd",
+        "source_line": 131455,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈328 m, 56% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434987e",
+        "name": "patel_green_park",
+        "source_line": 134316,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈89 m, 94% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434988c",
+        "name": "prakash_nagar",
+        "source_line": 136675,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈10 m, 96% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434988e",
+        "name": "banjarahills_rd3",
+        "source_line": 137007,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈337 m, 71% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc9002434988f",
+        "name": "yousufguda",
+        "source_line": 137175,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈2 m, 99% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349890",
+        "name": "gs_nagar",
+        "source_line": 137342,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈245 m, 60% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "6a036c3a20c29a0025e7cc26",
+        "name": "om_towers",
+        "source_line": 139333,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈17 m, 95% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498ab",
+        "name": "saraswathi_nagar",
+        "source_line": 141769,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈5 m, 99% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498c2",
+        "name": "king_koti",
+        "source_line": 145355,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈81 m, 79% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498c7",
+        "name": "nsk_platina",
+        "source_line": 146198,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈482 m, 59% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498f0",
+        "name": "my_home_tridasa",
+        "source_line": 153034,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈956 m, 23% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498f2",
+        "name": "niloufer_rd",
+        "source_line": 153392,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈3 m, 99% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "69497ec5ced32d0027560422",
+        "name": "aparna_zenith",
+        "source_line": 154561,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈207 m, 74% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "69cc1478095ac20024cc2d27",
+        "name": "kendriya_vihar",
+        "source_line": 157073,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈175 m, 93% area overlap); the drawn polygon is used"
+        ]
+      },
+      {
+        "hub_id": "6a036c3a20c29a0025e7cc46",
+        "name": "jayabheri_the_nirvana",
+        "source_line": 161319,
+        "issues": [
+          "'New polygon' WKT attribute differs from the drawn polygon (max deviation ≈2 m, 99% area overlap); the drawn polygon is used"
+        ]
+      }
+    ],
+    "inactive_hubs": [
+      {
+        "hub_id": "68efcc5d579bc90024349880",
+        "name": "bolarum_railway_crossing",
+        "status": "Not Live",
+        "cluster": "Kompally"
+      },
+      {
+        "hub_id": "68efcc5d579bc90024349886",
+        "name": "hmt_nagar",
+        "status": "Not Live",
+        "cluster": "Tarnaka"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498ad",
+        "name": "nacharam_rd",
+        "status": "Not Live",
+        "cluster": "Tarnaka"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498b0",
+        "name": "anandbagh",
+        "status": "Not Live",
+        "cluster": "Sainikpuri"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498c3",
+        "name": "bowrampet_rd",
+        "status": "Not Live",
+        "cluster": "Bachupally"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498d4",
+        "name": "myhome_avali",
+        "status": "Not Live",
+        "cluster": "Nallagandla"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498d5",
+        "name": "myhome_akrida",
+        "status": "Not Live",
+        "cluster": "Nallagandla"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498d8",
+        "name": "prakruthik_vihar",
+        "status": "Not Live",
+        "cluster": "Sainikpuri"
+      },
+      {
+        "hub_id": "68efcc5d579bc900243498f3",
+        "name": "neredmet",
+        "status": "Not Live",
+        "cluster": "Moula_Ali"
+      },
+      {
+        "hub_id": "6a036c3a20c29a0025e7cc46",
+        "name": "jayabheri_the_nirvana",
+        "status": "To be made live",
+        "cluster": "Wipro_Circle"
+      },
+      {
+        "hub_id": "6a036c3a20c29a0025e7cc47",
+        "name": "mystic_hills",
+        "status": "Not Live",
+        "cluster": "Borabanda"
+      },
+      {
+        "hub_id": "6a2ba19548d99f00249dc0e9",
+        "name": "aparna_serenity",
+        "status": "To be made live",
+        "cluster": "Kompally"
+      },
+      {
+        "hub_id": "6a2ba19548d99f00249dc0ea",
+        "name": "indraprastha_apartements",
+        "status": "To be made live",
+        "cluster": "Kompally"
+      }
+    ],
+    "cluster_name_variants": {
+      "Borabanda": [
+        "Borabanda",
+        "borabanda"
+      ],
+      "Kukatpally": [
+        "Kukatpally",
+        "kukatpally"
+      ],
+      "Miyapur": [
+        "Miyapur",
+        "miyapur"
+      ],
+      "Nallagandla": [
+        "Nallagandla",
+        "nallagandla"
+      ],
+      "Kompally": [
+        "Kompally",
+        "kompally"
+      ],
+      "Hitech_City": [
+        "Hitech_City",
+        "hitech_city"
+      ],
+      "Bachupally": [
+        "Bachupally",
+        "bachupally"
+      ],
+      "Kali_Mandir": [
+        "Kali_Mandir",
+        "Kali_mandir"
+      ],
+      "Moula_Ali": [
+        "Moula_Ali",
+        "Moula_ali"
+      ],
+      "Kokapet": [
+        "Kokapet",
+        "kokapet"
+      ],
+      "Rajendra_Nagar": [
+        "Rajendra_Nagar",
+        "Rajendranagar"
+      ]
+    }
+  },
+  "coordinate_issues": [],
+  "unclassified": [
+    {
+      "placemark_index": 1806,
+      "source_line": 101502,
+      "name": "Point 28",
+      "folder": "Cluster_layer",
+      "geometry": "Point"
+    }
+  ],
+  "encoding_anomalies": [
+    {
+      "source_line": 31960,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 37306,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 51509,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 51941,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 54425,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 55181,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 65279,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 70194,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 73434,
+      "field": "INSTA_HUB",
+      "category": "demand_point"
+    },
+    {
+      "source_line": 101942,
+      "field": "Screening hubs",
+      "category": "screening_record"
+    },
+    {
+      "source_line": 102086,
+      "field": "Screening hubs",
+      "category": "screening_record"
+    },
+    {
+      "source_line": 102182,
+      "field": "Screening hubs",
+      "category": "screening_record"
+    },
+    {
+      "source_line": 128273,
+      "field": "<name>",
+      "category": "hub"
+    },
+    {
+      "source_line": 128273,
+      "field": "Hub",
+      "category": "hub"
+    },
+    {
+      "source_line": 128273,
+      "field": "unnamed (2)",
+      "category": "hub"
+    },
+    {
+      "source_line": 128273,
+      "field": "unnamed (3)",
+      "category": "hub"
+    }
+  ],
+  "assumptions": [
+    {
+      "topic": "Hub identification",
+      "text": "A placemark is treated as a hub only if it carries a 'Hub ID' attribute (or both 'Hub' and 'Cluster'). Demand points, competitor points, screening records, cluster/region polygons and drawn lines are classified separately and are never treated as hubs.",
+      "inferred": "no"
+    },
+    {
+      "topic": "Hub coordinates",
+      "text": "Hubs are stored in the KML as service-area polygons without an explicit hub point. The hub location used for search and routing is the polygon centroid (360 hubs) or, where the centroid falls outside a concave polygon, an interior point guaranteed to lie inside it (1 hubs). Original polygon coordinates are preserved unchanged.",
+      "inferred": "yes"
+    },
+    {
+      "topic": "Cluster names",
+      "text": "Cluster attribute values are matched case- and punctuation-insensitively, and a trailing 'Cluster' is ignored when matching boundary polygons, so variants such as Borabanda = ['Borabanda', 'borabanda'], Kukatpally = ['Kukatpally', 'kukatpally'], Miyapur = ['Miyapur', 'miyapur'], Nallagandla = ['Nallagandla', 'nallagandla'] are one cluster.",
+      "inferred": "yes"
+    },
+    {
+      "topic": "Operational status",
+      "text": "The 'Hub status' attribute is used as given. Only 'Live' counts as active; 'Not Live' and 'To be made live' are inactive and can be excluded from nearest-hub searches.",
+      "inferred": "no"
+    },
+    {
+      "topic": "Regions",
+      "text": "Inferred: region polygons named South/East/North are matched to the hub 'Line' attribute values southern_hyd/eastern_hyd/northern_hyd by compass direction.",
+      "inferred": "yes"
+    },
+    {
+      "topic": "Demand hotspot (PMF plus-code cell)",
+      "text": "Points carrying USERS/DELS/DEL_BUCKET demand metrics per Plus Code cell.",
+      "inferred": "yes"
+    },
+    {
+      "topic": "Competitor live location (Snabbit)",
+      "text": "Folder name 'Snabbit live pluscodes'; Snabbit is listed as a competitor in the hub Competition Intelligence attributes.",
+      "inferred": "yes"
+    },
+    {
+      "topic": "Hub type",
+      "text": "The KML has no explicit hub type/category field, so hub_type is stored as null. 'Cluster Mapping' (competitive / non-competitive) and the PMF demand level are exposed as separate attributes.",
+      "inferred": "no"
+    }
+  ]
+}
