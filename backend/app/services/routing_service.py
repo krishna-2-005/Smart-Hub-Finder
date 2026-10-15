@@ -344,7 +344,7 @@ class GoogleRoutesProvider(RoutingProvider):
         return bool(self.settings.google_maps_api_key)
 
     def not_configured_reason(self) -> str | None:
-        return None if self.configured() else "GOOGLE_MAPS_API_KEY is not set in backend/.env"
+        return None if self.configured() else "GOOGLE_MAPS_API_KEY is not set (backend/.env locally, or Vercel Environment Variables)"
 
     def supported_modes(self) -> list[str]:
         return list(self.MODES)
@@ -450,7 +450,7 @@ class OpenRouteServiceProvider(RoutingProvider):
         return bool(self.settings.ors_api_key)
 
     def not_configured_reason(self) -> str | None:
-        return None if self.configured() else "ORS_API_KEY is not set in backend/.env"
+        return None if self.configured() else "ORS_API_KEY is not set (backend/.env locally, or Vercel Environment Variables)"
 
     def supported_modes(self) -> list[str]:
         return list(self.PROFILES)
