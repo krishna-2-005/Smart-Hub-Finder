@@ -125,9 +125,15 @@ async def import_kml(
     cache: ResultCache = Depends(get_cache),
 ):
     settings = request.app.state.settings
+    if activate and settings.dataset_read_only:
+        raise HTTPException(403, "This deployment serves a read-only dataset, so imports can be analysed but not "
+                                 "activated. To change the live data, process the new KML locally and push data/processed "
+                                 "to the repository.")
     raw = await file.read()
-    if len(raw) > MAX_UPLOAD_BYTES:
-        raise HTTPException(413, f"File too large (max {MAX_UPLOAD_BYTES // (1024 * 1024)} MB)")
+    max_bytes = int(min(MAX_UPLOAD_BYTES, settings.max_upload_mb * 1024 * 1024))
+    if len(raw) > max_bytes:
+        raise HTTPException(413, f"File too large (max {settings.max_upload_mb:g} MB here). A .kmz (zipped KML) is "
+                                 f"usually ~10x smaller.")
     name = file.filename or "upload.kml"
     if name.lower().endswith(".kmz"):
         try:
@@ -145,11 +151,11 @@ async def import_kml(
 
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     safe = re.sub(r"[^A-Za-z0-9._-]+", "_", name)
-    uploads = settings.data_dir / "uploads"
+    uploads = settings.writable_dir / "uploads"
     uploads.mkdir(parents=True, exist_ok=True)
     src = uploads / f"{stamp}_{safe}"
     src.write_bytes(raw)  # the untouched original is the backup
-    staging = settings.data_dir / "staging" / stamp
+    staging = settings.writable_dir / "staging" / stamp
 
     try:
         analysis = await run_in_threadpool(process_kml, src, staging, settings.classification_config, None, name)
@@ -172,7 +178,7 @@ async def import_kml(
                                  "Adjust backend/config/classification.json if hubs use different attributes.")
 
     processed = settings.processed_dir
-    archive = settings.data_dir / "archive" / stamp
+    archive = settings.writable_dir / "archive" / stamp
     if processed.exists():
         archive.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(processed), str(archive))

@@ -10,6 +10,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from fastapi.responses import Response
 
 from ..database import Database
+from ..models import NearestHubResponse
 from ..services import export_service as ex
 from ..services.data_store import DataStore
 from ..services.nearest_hub_service import ResultCache
@@ -131,17 +132,50 @@ def export_geojson(
     elif type == "service_areas":
         data, name = store.layers["hub_service_areas"], "hub_service_areas.geojson"
     else:
-        r = _result(result_id, cache, db, required=True)
-        if not r.get("route"):
-            raise HTTPException(422, "This search has no road route to export")
-        data = {"type": "FeatureCollection", "features": [{
-            "type": "Feature",
-            "geometry": {"type": "LineString", "coordinates": [[p[1], p[0]] for p in r["route"]["geometry"]]},
-            "properties": {k: r["route"][k] for k in ("provider", "travel_mode", "distance_m", "duration_s")}
-                          | {"hub_id": r["nearest"]["hub_id"], "hub_name": r["nearest"]["display_name"]},
-        }]}
-        name = "nearest_hub_route.geojson"
+        data, name = _route_geojson(_result(result_id, cache, db, required=True)), "nearest_hub_route.geojson"
     return _download(json.dumps(data, ensure_ascii=False), name, "application/geo+json")
+
+
+def _route_geojson(r: dict[str, Any]) -> dict[str, Any]:
+    if not r.get("route") or not r.get("nearest"):
+        raise HTTPException(422, "This search has no road route to export")
+    return {"type": "FeatureCollection", "features": [{
+        "type": "Feature",
+        "geometry": {"type": "LineString", "coordinates": [[p[1], p[0]] for p in r["route"]["geometry"]]},
+        "properties": {k: r["route"][k] for k in ("provider", "travel_mode", "distance_m", "duration_s")}
+                      | {"hub_id": r["nearest"]["hub_id"], "hub_name": r["nearest"]["display_name"]},
+    }]}
+
+
+# ---------------------------------------------------------------------------
+# Stateless variants: the client posts the search result it already holds.
+# Needed on serverless hosting, where the instance that ran the search may not
+# be the one that serves the export (no shared memory between instances).
+# To export an alternative hub's route, the client posts the result with
+# ``nearest`` and ``route`` replaced by that hub's ranking row and route.
+# ---------------------------------------------------------------------------
+
+@router.post("/kml")
+def export_kml_from_result(
+    result: NearestHubResponse,
+    type: Literal["route", "company_demo"] = Query("route"),
+    include_service_areas: bool = False,
+    store: DataStore = Depends(get_store),
+):
+    data, name = build_kml(type, store, result.model_dump(), None, include_service_areas)
+    return _download(data, name, KML_MEDIA)
+
+
+@router.post("/csv")
+def export_search_csv_from_result(result: NearestHubResponse):
+    r = result.model_dump()
+    return _download(ex.search_csv(r), f"nearest_hub_results_{r['result_id']}.csv", "text/csv; charset=utf-8")
+
+
+@router.post("/geojson")
+def export_route_geojson_from_result(result: NearestHubResponse):
+    return _download(json.dumps(_route_geojson(result.model_dump()), ensure_ascii=False), "nearest_hub_route.geojson",
+                     "application/geo+json")
 
 
 @router.post("/generate-files")
@@ -154,8 +188,12 @@ def generate_files(
     db: Database = Depends(get_db),
 ):
     """Write the five standard Google Earth KML files into the project's ``exports/`` folder."""
+    settings = request.app.state.settings
+    if settings.vercel:
+        raise HTTPException(403, "Writing export files to the project folder is only available when running locally. "
+                                 "Use the download buttons instead.")
     result = _result(result_id, cache, db, required=False) or cache.latest()
-    out_dir = request.app.state.settings.exports_dir
+    out_dir = settings.exports_path
     out_dir.mkdir(parents=True, exist_ok=True)
     written = []
     for kind, fname in (("all_hubs", "all_hubs.kml"), ("all_clusters", "all_clusters.kml"),

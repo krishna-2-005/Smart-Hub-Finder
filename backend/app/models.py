@@ -80,6 +80,7 @@ class HealthResponse(BaseModel):
     clusters: int
     dataset_loaded_at: Optional[str]
     routing: dict[str, Any]
+    deployment: dict[str, Any]
 
 
 class HubOut(BaseModel):

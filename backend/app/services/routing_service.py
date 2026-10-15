@@ -20,7 +20,7 @@ import logging
 import time
 from abc import ABC, abstractmethod
 from dataclasses import asdict, dataclass, field
-from typing import Any
+from typing import Any, Callable
 
 import httpx
 
@@ -150,9 +150,13 @@ class RoutingProvider(ABC):
     label: str = ""
     matrix_batch_size: int = 25
 
-    def __init__(self, settings: Settings, client: httpx.AsyncClient):
+    def __init__(self, settings: Settings, client: httpx.AsyncClient | Callable[[], httpx.AsyncClient]):
         self.settings = settings
-        self.client = client
+        self._http = client if callable(client) else (lambda: client)
+
+    @property
+    def client(self) -> httpx.AsyncClient:
+        return self._http()
 
     @abstractmethod
     def configured(self) -> bool: ...
@@ -552,24 +556,43 @@ def _rk(p: LatLng) -> tuple[float, float]:
 class RoutingService:
     def __init__(self, settings: Settings, client: httpx.AsyncClient | None = None):
         self.settings = settings
-        self.client = client or httpx.AsyncClient(
-            timeout=httpx.Timeout(settings.routing_timeout_s, connect=10.0),
-            headers={"User-Agent": settings.routing_user_agent},
-            follow_redirects=True,
-        )
+        self._injected = client
+        self._loop_client: tuple[asyncio.AbstractEventLoop, httpx.AsyncClient] | None = None
         self.providers: dict[str, RoutingProvider] = {
             p.name: p
             for p in (
-                GoogleRoutesProvider(settings, self.client),
-                OsrmProvider(settings, self.client),
-                OpenRouteServiceProvider(settings, self.client),
+                GoogleRoutesProvider(settings, self.http),
+                OsrmProvider(settings, self.http),
+                OpenRouteServiceProvider(settings, self.http),
             )
         }
         self._matrix_cache = _TTLCache()
         self._route_cache = _TTLCache()
 
+    def http(self) -> httpx.AsyncClient:
+        """HTTP client bound to the running event loop.
+
+        Serverless runtimes may serve successive requests on different event loops; a pooled
+        client created on an earlier (now closed) loop would fail, so one is created per loop.
+        """
+        if self._injected is not None:
+            return self._injected
+        loop = asyncio.get_running_loop()
+        if self._loop_client is None or self._loop_client[0] is not loop or self._loop_client[1].is_closed:
+            client = httpx.AsyncClient(
+                timeout=httpx.Timeout(self.settings.routing_timeout_s, connect=10.0),
+                headers={"User-Agent": self.settings.routing_user_agent},
+                follow_redirects=True,
+            )
+            self._loop_client = (loop, client)
+        return self._loop_client[1]
+
     async def aclose(self) -> None:
-        await self.client.aclose()
+        if self._injected is not None:
+            await self._injected.aclose()
+        elif self._loop_client is not None and self._loop_client[0] is asyncio.get_running_loop():
+            await self._loop_client[1].aclose()
+        self._loop_client = None
 
     def resolve(self, name: str | None = None) -> RoutingProvider:
         name = (name or self.settings.routing_provider or "auto").lower()

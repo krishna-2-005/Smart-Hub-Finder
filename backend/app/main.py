@@ -8,12 +8,14 @@ Run from the ``backend`` directory::
 from __future__ import annotations
 
 import logging
+import threading
 import time
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import JSONResponse
 
 from . import __version__
@@ -26,32 +28,46 @@ from .services.pipeline import KmlProcessingError, process_kml
 from .services.routing_service import RoutingError, RoutingService
 
 log = logging.getLogger("smart_hub")
+_init_lock = threading.Lock()
+
+
+def init_state(app: FastAPI) -> None:
+    """Build shared state once. Idempotent: called from the lifespan and lazily on the first request,
+    because serverless runtimes (Vercel) do not guarantee ASGI lifespan events."""
+    if getattr(app.state, "initialized", False):
+        return
+    with _init_lock:
+        if getattr(app.state, "initialized", False):
+            return
+        settings = get_settings()
+        logging.basicConfig(level=settings.log_level.upper(), format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+        # Uvicorn's access log prints query strings (e.g. /api/locate?lat=..&lng=..). The access_log middleware
+        # below logs paths only, so user coordinates never reach the logs.
+        logging.getLogger("uvicorn.access").disabled = True
+        app.state.settings = settings
+        app.state.db = Database(settings.db_path)
+        store = DataStore(settings.processed_dir)
+
+        processed = (settings.processed_dir / "hubs.json").exists()
+        if not processed and settings.source_kml.exists() and not settings.dataset_read_only:
+            log.info("No processed dataset found - processing %s", settings.source_kml.name)
+            try:
+                process_kml(settings.source_kml, settings.processed_dir, settings.classification_config,
+                            backup_path=settings.source_dir / "original_backup.kml")
+            except KmlProcessingError as exc:
+                log.error("KML processing failed: %s %s", exc, exc.details)
+        store.load()
+        app.state.store = store
+        app.state.routing = RoutingService(settings)
+        app.state.results = ResultCache()
+        status = app.state.routing.status(app.state.db.get_preferences()["routing_provider"])
+        log.info("Platform %s - routing provider: %s", settings.platform, status["active"] or status["error"])
+        app.state.initialized = True
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    settings = get_settings()
-    logging.basicConfig(level=settings.log_level.upper(), format="%(asctime)s %(levelname)s %(name)s: %(message)s")
-    # Uvicorn's access log prints query strings (e.g. /api/locate?lat=..&lng=..). The access_log middleware below
-    # logs paths only, so user coordinates never reach the logs.
-    logging.getLogger("uvicorn.access").disabled = True
-    app.state.settings = settings
-    app.state.db = Database(settings.database_path)
-    store = DataStore(settings.processed_dir)
-
-    if not (settings.processed_dir / "hubs.json").exists() and settings.source_kml.exists():
-        log.info("No processed dataset found - processing %s", settings.source_kml.name)
-        try:
-            process_kml(settings.source_kml, settings.processed_dir, settings.classification_config,
-                        backup_path=settings.source_dir / "original_backup.kml")
-        except KmlProcessingError as exc:
-            log.error("KML processing failed: %s %s", exc, exc.details)
-    store.load()
-    app.state.store = store
-    app.state.routing = RoutingService(settings)
-    app.state.results = ResultCache()
-    status = app.state.routing.status(app.state.db.get_preferences()["routing_provider"])
-    log.info("Routing provider: %s", status["active"] or status["error"])
+    init_state(app)
     yield
     await app.state.routing.aclose()
 
@@ -70,6 +86,14 @@ app.add_middleware(
     allow_headers=["*"],
     expose_headers=["Content-Disposition"],
 )
+# KML/GeoJSON compress ~10x; also keeps large exports under serverless response limits.
+app.add_middleware(GZipMiddleware, minimum_size=1024)
+
+
+@app.middleware("http")
+async def ensure_initialized(request: Request, call_next):
+    init_state(request.app)
+    return await call_next(request)
 
 
 @app.middleware("http")

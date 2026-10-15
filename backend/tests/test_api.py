@@ -44,6 +44,40 @@ def test_health(client):
     assert r["routing"]["active"] == "osrm"
     google = next(p for p in r["routing"]["providers"] if p["name"] == "google")
     assert google["configured"] is False
+    assert r["deployment"] == {"platform": "local", "read_only_dataset": False, "persistent_storage": True,
+                               "max_upload_mb": 60.0}
+
+
+def test_stateless_exports_from_posted_result(client):
+    """Exports built from a posted result need no server-side memory (serverless-safe)."""
+    res = client.post("/api/nearest-hub", json={"latitude": 17.4849, "longitude": 78.4138, "save_history": False}).json()
+    client.app.state.results.clear()  # simulate a different serverless instance
+    assert client.get("/api/export/kml", params={"type": "route", "result_id": res["result_id"]}).status_code == 404
+
+    kml = client.post("/api/export/kml", params={"type": "route"}, json=res)
+    assert kml.status_code == 200 and b"<LineString>" in kml.content
+    assert "nearest_hub_route.kml" in kml.headers["content-disposition"]
+    demo = client.post("/api/export/kml", params={"type": "company_demo"}, json=res)
+    assert demo.status_code == 200 and b"Nearest hub search" in demo.content
+    csv = client.post("/api/export/csv", json=res)
+    assert csv.status_code == 200 and "road_distance_km" in csv.text
+    gj = client.post("/api/export/geojson", json=res).json()
+    assert len(gj["features"][0]["geometry"]["coordinates"]) == res["route"]["point_count"]
+
+    # Alternative hub: the client swaps in that hub's ranking row and route
+    alt_row = res["ranking"][2]
+    alt = client.post("/api/route", json={"origin_latitude": 17.4849, "origin_longitude": 78.4138,
+                                          "hub_id": alt_row["hub_id"]}).json()
+    alt_kml = client.post("/api/export/kml", params={"type": "route"},
+                          json={**res, "nearest": alt_row, "route": alt["route"]})
+    assert f"Nearest hub: {alt_row['display_name']}".encode() in alt_kml.content
+
+    assert client.post("/api/export/kml", params={"type": "route"}, json={"bogus": 1}).status_code == 422
+
+
+def test_responses_are_gzip_compressed(client):
+    r = client.get("/api/export/kml", params={"type": "all_hubs"}, headers={"Accept-Encoding": "gzip"})
+    assert r.headers.get("content-encoding") == "gzip"
 
 
 def test_hubs_and_search(client):

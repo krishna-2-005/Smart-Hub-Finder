@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections import Counter
 from typing import Any, Literal, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, HTTPException, Query, Request
 from fastapi.responses import PlainTextResponse
 
 from .. import __version__
@@ -29,7 +29,7 @@ def _hub_out(h: dict[str, Any], include_metadata: bool) -> dict[str, Any]:
 
 
 @router.get("/health", response_model=HealthResponse)
-def health(store: DataStore = Depends(get_store_any), routing: RoutingService = Depends(get_routing),
+def health(request: Request, store: DataStore = Depends(get_store_any), routing: RoutingService = Depends(get_routing),
            db: Database = Depends(get_db)):
     prefs = db.get_preferences()
     return {
@@ -41,6 +41,7 @@ def health(store: DataStore = Depends(get_store_any), routing: RoutingService = 
         "clusters": len(store.clusters),
         "dataset_loaded_at": store.loaded_at,
         "routing": routing.status(prefs["routing_provider"]),
+        "deployment": request.app.state.settings.deployment_info(),
     }
 
 

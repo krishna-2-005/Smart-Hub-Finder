@@ -1,0 +1,11 @@
+# Runtime dependencies of the API. Vercel installs this file for api/index.py;
+# backend/requirements.txt adds the local server (uvicorn) and test tools on top.
+fastapi==0.115.6
+pydantic==2.10.4
+pydantic-settings==2.7.0
+shapely==2.0.6
+numpy==2.2.6
+lxml==5.3.0
+httpx==0.28.1
+python-multipart==0.0.20
+python-dotenv==1.0.1

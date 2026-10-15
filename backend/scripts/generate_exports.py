@@ -45,7 +45,7 @@ def main() -> int:
     args = ap.parse_args()
 
     settings = get_settings()
-    out = args.out or settings.exports_dir
+    out = args.out or settings.exports_path
     out.mkdir(parents=True, exist_ok=True)
     store = DataStore(settings.processed_dir)
     store.load()
