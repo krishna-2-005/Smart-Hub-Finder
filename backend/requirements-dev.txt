@@ -1,0 +1,3 @@
+-r requirements.txt
+# Browser end-to-end checks (e2e/ui_checks.py). Uses the installed Microsoft Edge.
+playwright==1.49.1
