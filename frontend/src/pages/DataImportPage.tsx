@@ -20,7 +20,10 @@ function IssueBlock({ title, count, tone = "amber", children }: { title: string;
 }
 
 export function DataImportPage() {
-  const { analytics, reload } = useAppData();
+  const { analytics, reload, health } = useAppData();
+  const deployment = health?.deployment;
+  const readOnly = deployment?.read_only_dataset ?? false;
+  const maxMb = deployment?.max_upload_mb ?? 60;
   const [dq, setDq] = useState<DataQuality | null>(null);
   const [dqError, setDqError] = useState<string | null>(null);
   const [file, setFile] = useState<File | null>(null);
@@ -34,6 +37,13 @@ export function DataImportPage() {
 
   const run = async (activate: boolean) => {
     if (!file) return;
+    if (file.size > maxMb * 1024 * 1024) {
+      setImportError(
+        `This file is ${(file.size / 1024 / 1024).toFixed(1)} MB; the limit here is ${maxMb} MB. ` +
+          "Zip it as a .kmz (KML usually compresses about 10x) and upload that instead.",
+      );
+      return;
+    }
     if (activate && !window.confirm("Replace the active hub dataset with this file? The current processed data is archived.")) return;
     setBusy(activate ? "activate" : "preview");
     setImportError(null);
@@ -81,7 +91,7 @@ export function DataImportPage() {
             >
               <FileCode2 className="h-6 w-6 text-slate-400" />
               <span className="font-medium text-ink">{file ? file.name : "Choose a .kml or .kmz file"}</span>
-              <span className="text-xs text-slate-500">{file ? `${(file.size / 1024 / 1024).toFixed(2)} MB` : "Up to 60 MB"}</span>
+              <span className="text-xs text-slate-500">{file ? `${(file.size / 1024 / 1024).toFixed(2)} MB` : `Up to ${maxMb} MB`}</span>
               <input
                 id="kml-file"
                 type="file"
@@ -98,10 +108,23 @@ export function DataImportPage() {
               <Button icon={ClipboardList} onClick={() => void run(false)} disabled={!file} loading={busy === "preview"}>
                 Analyse only
               </Button>
-              <Button variant="primary" icon={Upload} onClick={() => void run(true)} disabled={!file} loading={busy === "activate"}>
+              <Button
+                variant="primary"
+                icon={Upload}
+                onClick={() => void run(true)}
+                disabled={!file || readOnly}
+                loading={busy === "activate"}
+                title={readOnly ? "The cloud deployment serves a read-only dataset" : undefined}
+              >
                 Analyse &amp; activate
               </Button>
             </div>
+            {readOnly && (
+              <Alert tone="info" title="Read-only dataset on this deployment">
+                Uploads can be analysed here, but the live dataset comes from the repository. To change it, run the import locally and push the
+                updated <code>data/processed</code> folder; the deployment updates automatically.
+              </Alert>
+            )}
             {importError && <Alert tone="error" title="Import failed">{importError}</Alert>}
             {importResult && (
               <Alert tone={importResult.activated ? "success" : "info"} title={importResult.activated ? "Dataset activated" : "Analysis complete (not activated)"}>

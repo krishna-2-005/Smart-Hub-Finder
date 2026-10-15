@@ -1,6 +1,7 @@
 """End-to-end UI checks with Playwright (uses the installed Microsoft Edge).
 
-Prerequisites: backend on :8000 and frontend dev server on :5173, and
+Prerequisites: backend on :8000 and frontend dev server on :5173 (or set E2E_BASE, e.g. to a
+``vite preview`` or deployed URL), and
 ``pip install -r backend/requirements-dev.txt``.
 
 Run from the project root::
@@ -13,6 +14,7 @@ handled downloads, and isolation keeps that from affecting other groups.
 """
 from __future__ import annotations
 
+import os
 import sys
 import time
 from contextlib import contextmanager
@@ -21,7 +23,7 @@ from typing import Callable, Iterator
 
 from playwright.sync_api import BrowserContext, Page, expect, sync_playwright
 
-BASE = "http://localhost:5173"
+BASE = os.environ.get("E2E_BASE", "http://localhost:5173")
 OUT = Path(sys.argv[1] if len(sys.argv) > 1 else "e2e/screenshots")
 OUT.mkdir(parents=True, exist_ok=True)
 RESULTS: list[tuple[str, bool, str]] = []
@@ -282,8 +284,8 @@ def downloads_group() -> None:
                 page.locator("a[href*='type=all_hubs']").first.click()
             data = Path(d.value.path()).read_bytes()
             assert data.startswith(b"<?xml") and b"<kml" in data, "all_hubs download is not KML"
-            with page.expect_download() as d2:
-                page.locator("a[href*='type=route']").first.click()
+            with page.expect_download() as d2:  # built from the posted search result (serverless-safe)
+                page.get_by_role("button", name="Download nearest_hub_route.kml").click()
             data2 = Path(d2.value.path()).read_bytes()
             assert b"<LineString>" in data2, "route KML has no LineString"
             assert data2.count(b",0\n") > 20, "route KML should contain many road points"

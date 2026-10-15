@@ -19,7 +19,8 @@ function NumberField({ id, label, value, onChange, min, max, step = 1, hint }: {
 }
 
 export function SettingsPage() {
-  const { settings, setSettings } = useAppData();
+  const { settings, setSettings, health } = useAppData();
+  const ephemeral = health?.deployment.persistent_storage === false;
   const [draft, setDraft] = useState<Preferences | null>(settings?.preferences ?? null);
   const [saving, setSaving] = useState(false);
   const [msg, setMsg] = useState<{ tone: "success" | "error"; text: string } | null>(null);
@@ -84,6 +85,12 @@ export function SettingsPage() {
         }
       />
       {msg && <Alert tone={msg.tone}>{msg.text}</Alert>}
+      {ephemeral && (
+        <Alert tone="warning" title="Settings are temporary on the cloud deployment">
+          Serverless instances do not share storage, so saved defaults can reset. Each search still sends its own travel mode, ranking, radius and
+          candidate limit from the search panel. API keys are configured as Vercel environment variables.
+        </Alert>
+      )}
 
       <Card title="Routing provider" icon={RouteIcon} subtitle="All providers return real road-network geometry, distance and duration. None ever falls back to a straight line.">
         <div className="space-y-4">

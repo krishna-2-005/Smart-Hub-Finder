@@ -1,8 +1,11 @@
 import { Download } from "lucide-react";
-import { exportUrl } from "../../api/client";
+import { exportResult } from "../../api/client";
 import type { NearestHubResult } from "../../api/types";
 import { fmtKm, fmtMinutes } from "../../lib/format";
-import { LinkButton, cx } from "../ui";
+import { useAppData } from "../../context/AppData";
+import { useSearch } from "../../context/SearchContext";
+import { resultForSelectedHub } from "../../lib/exports";
+import { ActionButton, cx } from "../ui";
 
 /** Top-N reachable hubs ranked by road distance/time, with an inline route comparison. */
 export function AlternativeHubs({
@@ -14,6 +17,8 @@ export function AlternativeHubs({
   selectedHubId: string | null;
   onSelect: (hubId: string) => void;
 }) {
+  const { selectedRoute } = useSearch();
+  const { hubsById } = useAppData();
   const rows = result.ranking;
   if (!rows.length) return <p className="text-sm text-slate-500">No reachable hubs to compare.</p>;
   const maxKm = Math.max(...rows.map((r) => r.road_distance_km ?? 0), 0.001);
@@ -89,13 +94,17 @@ export function AlternativeHubs({
         </div>
       )}
       <div className="flex flex-wrap gap-2 pt-1">
-        <LinkButton size="sm" icon={Download} href={exportUrl.csv("search", { result_id: result.result_id })} download>
+        <ActionButton size="sm" icon={Download} onAction={() => exportResult.csv(result)}>
           Results CSV
-        </LinkButton>
-        {selectedHubId && selectedHubId !== result.nearest?.hub_id && (
-          <LinkButton size="sm" icon={Download} href={exportUrl.kml("route", { result_id: result.result_id, hub_id: selectedHubId })} download>
+        </ActionButton>
+        {selectedHubId && selectedHubId !== result.nearest?.hub_id && selectedRoute && (
+          <ActionButton
+            size="sm"
+            icon={Download}
+            onAction={() => exportResult.kml(resultForSelectedHub(result, selectedHubId, selectedRoute, hubsById[selectedHubId]))}
+          >
             Selected route KML
-          </LinkButton>
+          </ActionButton>
         )}
       </div>
     </div>

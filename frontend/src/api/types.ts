@@ -92,6 +92,14 @@ export interface Health {
   clusters: number;
   dataset_loaded_at: string | null;
   routing: RoutingStatus;
+  deployment: Deployment;
+}
+
+export interface Deployment {
+  platform: "local" | "vercel";
+  read_only_dataset: boolean;
+  persistent_storage: boolean;
+  max_upload_mb: number;
 }
 
 export interface RouteStep {

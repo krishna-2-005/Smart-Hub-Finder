@@ -1,5 +1,5 @@
 import { AlertTriangle, CheckCircle2, Info, Loader2, XCircle, type LucideIcon } from "lucide-react";
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import { useState, type ButtonHTMLAttributes, type ReactNode } from "react";
 
 export function cx(...parts: (string | false | null | undefined)[]) {
   return parts.filter(Boolean).join(" ");
@@ -83,6 +83,64 @@ export function Button({
       {loading ? <Loader2 className="h-4 w-4 animate-spin" aria-hidden /> : Icon ? <Icon className="h-4 w-4" aria-hidden /> : null}
       {children}
     </button>
+  );
+}
+
+/** Button for an async action (e.g. a POST download) with its own loading and error state. */
+export function ActionButton({
+  onAction,
+  children,
+  icon,
+  variant = "secondary",
+  size = "md",
+  className,
+  disabled,
+  title,
+  ariaLabel,
+}: {
+  onAction: () => Promise<void>;
+  children: ReactNode;
+  icon?: LucideIcon;
+  variant?: Variant;
+  size?: "sm" | "md";
+  className?: string;
+  disabled?: boolean;
+  title?: string;
+  ariaLabel?: string;
+}) {
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  return (
+    <span className="inline-flex flex-col gap-1">
+      <Button
+        variant={variant}
+        size={size}
+        icon={icon}
+        loading={busy}
+        disabled={disabled}
+        title={title}
+        aria-label={ariaLabel}
+        className={className}
+        onClick={async () => {
+          setBusy(true);
+          setError(null);
+          try {
+            await onAction();
+          } catch (e) {
+            setError((e as Error).message);
+          } finally {
+            setBusy(false);
+          }
+        }}
+      >
+        {children}
+      </Button>
+      {error && (
+        <span role="alert" className="max-w-xs text-[11px] text-red-600">
+          {error}
+        </span>
+      )}
+    </span>
   );
 }
 

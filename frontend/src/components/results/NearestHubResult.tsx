@@ -1,8 +1,8 @@
 import { Clock, Download, ExternalLink, MapPin, Navigation, Route as RouteIcon, ShieldAlert, ShieldCheck } from "lucide-react";
-import { exportUrl } from "../../api/client";
+import { exportResult } from "../../api/client";
 import type { NearestHubResult as Result } from "../../api/types";
 import { fmtCoord, fmtKm, fmtMinutes, rankingLabel, strategyLabel, travelModeLabel } from "../../lib/format";
-import { Alert, Badge, KeyValue, LinkButton } from "../ui";
+import { ActionButton, Alert, Badge, KeyValue, LinkButton } from "../ui";
 
 const STATUS_TITLE: Record<string, string> = {
   no_eligible_hubs: "No eligible hubs",
@@ -79,9 +79,9 @@ export function NearestHubResult({ result }: { result: Result }) {
                   Navigate in Google Maps
                 </LinkButton>
               )}
-              <LinkButton href={exportUrl.kml("route", { result_id: result.result_id })} download icon={Download} size="sm">
+              <ActionButton onAction={() => exportResult.kml(result)} icon={Download} size="sm">
                 Export route KML
-              </LinkButton>
+              </ActionButton>
               {result.links.google_earth_destination && (
                 <LinkButton href={result.links.google_earth_destination} external icon={ExternalLink} size="sm" variant="ghost">
                   Google Earth

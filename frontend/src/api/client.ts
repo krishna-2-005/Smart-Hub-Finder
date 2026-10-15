@@ -113,6 +113,51 @@ export const api = {
     ),
 };
 
+/** POST a body and save the response as a file (used for exports built from a search result). */
+export async function downloadPost(path: string, body: unknown, fallbackName: string): Promise<void> {
+  let res: Response;
+  try {
+    res = await fetch(`${BASE}${path}`, json("POST", body));
+  } catch {
+    throw new ApiError(0, "Cannot reach the backend API. Check that the FastAPI server is running.");
+  }
+  if (!res.ok) {
+    const text = await res.text();
+    let parsed: unknown = text;
+    try {
+      parsed = JSON.parse(text);
+    } catch {
+      /* plain-text error body */
+    }
+    throw new ApiError(res.status, messageFrom(parsed, res.status));
+  }
+  const blob = await res.blob();
+  const name = /filename="?([^";]+)"?/.exec(res.headers.get("Content-Disposition") ?? "")?.[1] ?? fallbackName;
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 10_000);
+}
+
+/**
+ * Exports that depend on a search result post the result itself, so they work on serverless
+ * hosting where the instance that ran the search may not serve the download.
+ */
+export const exportResult = {
+  kml: (result: NearestHubResult, type: "route" | "company_demo" = "route") =>
+    downloadPost(
+      `/api/export/kml?type=${type}${type === "company_demo" ? "&include_service_areas=true" : ""}`,
+      result,
+      type === "route" ? "nearest_hub_route.kml" : "company_demo.kml",
+    ),
+  csv: (result: NearestHubResult) => downloadPost("/api/export/csv", result, `nearest_hub_results_${result.result_id}.csv`),
+  geojson: (result: NearestHubResult) => downloadPost("/api/export/geojson", result, "nearest_hub_route.geojson"),
+};
+
 export const exportUrl = {
   kml: (type: string, opts: { cluster_id?: string; result_id?: string; hub_id?: string; include_service_areas?: boolean } = {}) =>
     `${BASE}/api/export/kml${qs({ type, ...opts })}`,

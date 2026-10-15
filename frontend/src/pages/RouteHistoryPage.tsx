@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { api } from "../api/client";
 import type { HistoryRecord } from "../api/types";
 import { Alert, Badge, Button, Card, EmptyState, PageHeader, Spinner } from "../components/ui";
+import { useAppData } from "../context/AppData";
 import { useSearch } from "../context/SearchContext";
 import { fmtCoord, fmtDateTime, fmtMeters, fmtSecondsAsMin, travelModeLabel } from "../lib/format";
 
@@ -12,6 +13,8 @@ export function RouteHistoryPage() {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const { loadResult } = useSearch();
+  const { health } = useAppData();
+  const ephemeral = health?.deployment.persistent_storage === false;
   const navigate = useNavigate();
 
   const load = useCallback(async () => {
@@ -68,10 +71,16 @@ export function RouteHistoryPage() {
       />
       <Alert tone="info" title="Privacy">
         <span className="inline-flex items-center gap-1">
-          <Lock className="h-3.5 w-3.5" /> History stays on this server (data/app.db). Nothing is sent to third parties except the coordinates needed to compute a
-          route with the configured routing provider.
+          <Lock className="h-3.5 w-3.5" /> History stays on this server&apos;s SQLite database. Nothing is sent to third parties except the coordinates needed to
+          compute a route with the configured routing provider.
         </span>
       </Alert>
+      {ephemeral && (
+        <Alert tone="warning" title="Temporary history on the cloud deployment">
+          This deployment runs on serverless functions whose disk is reset regularly, so saved searches may disappear. Run the app locally
+          for permanent SQLite history.
+        </Alert>
+      )}
       {error && <Alert tone="error">{error}</Alert>}
       <Card bodyClassName="p-0" icon={History} title={`Saved searches${records ? ` (${records.length})` : ""}`}>
         {!records ? (

@@ -1,12 +1,27 @@
 import { Download, Earth, ExternalLink, FileDown, FolderDown, MapPinned, Route as RouteIcon } from "lucide-react";
 import { useState } from "react";
-import { api, exportUrl } from "../api/client";
+import { api, exportResult, exportUrl } from "../api/client";
 import { useAppData } from "../context/AppData";
 import { useSearch } from "../context/SearchContext";
-import { Alert, Badge, Button, Card, LinkButton } from "./ui";
+import { resultForSelectedHub } from "../lib/exports";
+import { ActionButton, Alert, Badge, Button, Card, LinkButton } from "./ui";
 import { ClusterSelector } from "./search/ClusterSelector";
 
-function ExportRow({ title, description, href, disabled, disabledReason }: { title: string; description: string; href: string; disabled?: boolean; disabledReason?: string }) {
+function ExportRow({
+  title,
+  description,
+  href,
+  onAction,
+  disabled,
+  disabledReason,
+}: {
+  title: string;
+  description: string;
+  href?: string;
+  onAction?: () => Promise<void>;
+  disabled?: boolean;
+  disabledReason?: string;
+}) {
   return (
     <div className="flex flex-col gap-2 rounded-lg border border-slate-200 p-3 sm:flex-row sm:items-center sm:justify-between">
       <div className="min-w-0">
@@ -14,11 +29,15 @@ function ExportRow({ title, description, href, disabled, disabledReason }: { tit
         <p className="text-xs text-slate-500">{disabled && disabledReason ? disabledReason : description}</p>
       </div>
       {disabled ? (
-        <Button size="sm" icon={Download} disabled>
+        <Button size="sm" icon={Download} disabled aria-label={`Download ${title}`}>
           Download
         </Button>
+      ) : onAction ? (
+        <ActionButton size="sm" icon={Download} onAction={onAction} variant="primary" ariaLabel={`Download ${title}`}>
+          Download
+        </ActionButton>
       ) : (
-        <LinkButton size="sm" icon={Download} href={href} download variant="primary">
+        <LinkButton size="sm" icon={Download} href={href ?? "#"} download variant="primary">
           Download
         </LinkButton>
       )}
@@ -27,13 +46,16 @@ function ExportRow({ title, description, href, disabled, disabledReason }: { tit
 }
 
 export function KMLExportPanel() {
-  const { clusters, selectedClusterId } = useAppData();
-  const { result, selectedHubId } = useSearch();
+  const { clusters, selectedClusterId, hubsById, health } = useAppData();
+  const { result, selectedHubId, selectedRoute } = useSearch();
   const [clusterId, setClusterId] = useState(selectedClusterId ?? clusters[0]?.cluster_id ?? "");
   const [written, setWritten] = useState<string | null>(null);
   const [writing, setWriting] = useState(false);
   const hasRoute = Boolean(result?.route);
-  const routeHub = selectedHubId && selectedHubId !== result?.nearest?.hub_id ? selectedHubId : undefined;
+  const routeHub = selectedHubId && selectedHubId !== result?.nearest?.hub_id ? selectedHubId : null;
+  const local = (health?.deployment.platform ?? "local") === "local";
+  // The route on screen: the nearest hub's, or the alternative the user selected.
+  const routeResult = result ? resultForSelectedHub(result, routeHub, selectedRoute, routeHub ? hubsById[routeHub] : undefined) : null;
 
   const writeFiles = async () => {
     setWriting(true);
@@ -70,23 +92,26 @@ export function KMLExportPanel() {
           </div>
           <ExportRow
             title="nearest_hub_route.kml"
-            description={`Search location, nearest hub${routeHub ? " (your selected alternative)" : ""}, the full road-following route (${result?.route?.point_count ?? 0} points) and ranked alternatives.`}
-            href={exportUrl.kml("route", { result_id: result?.result_id, hub_id: routeHub })}
+            description={`Search location, ${routeHub ? "your selected alternative hub" : "nearest hub"}, the full road-following route (${routeResult?.route?.point_count ?? 0} points) and ranked alternatives.`}
+            onAction={routeResult ? () => exportResult.kml(routeResult, "route") : undefined}
             disabled={!hasRoute}
             disabledReason="Run a nearest-hub search first (Find Nearest Hub) to export its road route."
           />
           <ExportRow
             title="company_demo.kml"
             description={`Complete network (all clusters, hubs, service lines)${hasRoute ? " plus the latest search and its road route" : ""}.`}
-            href={exportUrl.kml("company_demo", { result_id: result?.result_id, include_service_areas: true })}
+            href={exportUrl.kml("company_demo", { include_service_areas: true })}
+            onAction={routeResult && hasRoute ? () => exportResult.kml(routeResult, "company_demo") : undefined}
           />
         </div>
-        <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-4">
-          <Button icon={FolderDown} onClick={() => void writeFiles()} loading={writing}>
-            Write all 5 files to the project’s exports/ folder
-          </Button>
-          {written && <p className="text-xs text-slate-600">{written}</p>}
-        </div>
+        {local && (
+          <div className="mt-4 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-4">
+            <Button icon={FolderDown} onClick={() => void writeFiles()} loading={writing}>
+              Write all 5 files to the project’s exports/ folder
+            </Button>
+            {written && <p className="text-xs text-slate-600">{written}</p>}
+          </div>
+        )}
       </Card>
 
       <Card title="Reports & GeoJSON" icon={FileDown}>
@@ -98,9 +123,9 @@ export function KMLExportPanel() {
             Hub directory CSV
           </LinkButton>
           {result ? (
-            <LinkButton size="sm" icon={Download} href={exportUrl.csv("search", { result_id: result.result_id })} download>
+            <ActionButton size="sm" icon={Download} onAction={() => exportResult.csv(result)}>
               Nearest-hub results CSV
-            </LinkButton>
+            </ActionButton>
           ) : (
             <Button size="sm" icon={Download} disabled title="Run a search first">
               Nearest-hub results CSV
@@ -115,10 +140,10 @@ export function KMLExportPanel() {
           <LinkButton size="sm" icon={Download} href={exportUrl.geojson("service_areas")} download>
             Service areas GeoJSON
           </LinkButton>
-          {hasRoute && (
-            <LinkButton size="sm" icon={Download} href={exportUrl.geojson("route", { result_id: result!.result_id })} download>
+          {hasRoute && routeResult && (
+            <ActionButton size="sm" icon={Download} onAction={() => exportResult.geojson(routeResult)}>
               Route GeoJSON
-            </LinkButton>
+            </ActionButton>
           )}
         </div>
       </Card>
