@@ -1,0 +1,80 @@
+{
+  "_doc": "Placemark classification rules. Rules are evaluated in order: hub -> cluster_boundary -> region -> other_categories -> unclassified. A placemark matches a 'fields' rule only if every listed ExtendedData field is present. Set 'inferred': true on rules that rely on interpretation rather than an explicit attribute, so the UI and report can label them.",
+  "hub": {
+    "match_any": [
+      { "fields": ["Hub ID"] },
+      { "fields": ["Hub", "Cluster"] }
+    ],
+    "fields": {
+      "hub_id": "Hub ID",
+      "hub_code": "Hub",
+      "cluster": "Cluster",
+      "status": "Hub status",
+      "region": "Line",
+      "cluster_mapping": "Cluster Mapping",
+      "priority": "Priority for cluster",
+      "demand_level": "Society/ Non- society",
+      "hub_type": null
+    },
+    "name_source": "placemark_name",
+    "active_status_values": ["Live"],
+    "drop_metadata_fields": ["New polygon"],
+    "compare_wkt_field": "New polygon",
+    "drop_empty_unnamed_fields": true
+  },
+  "cluster_boundary": {
+    "geometry_types": ["Polygon", "MultiPolygon"],
+    "name_pattern": "(?i)[ _-]?cluster$",
+    "name_strip_pattern": "(?i)[ _-]?cluster$"
+  },
+  "region": {
+    "folder_pattern": "^Lines$",
+    "geometry_types": ["Polygon", "MultiPolygon"],
+    "hub_region_mapping": { "South": "southern_hyd", "East": "eastern_hyd", "North": "northern_hyd" },
+    "mapping_note": "Inferred: region polygons named South/East/North are matched to the hub 'Line' attribute values southern_hyd/eastern_hyd/northern_hyd by compass direction."
+  },
+  "other_categories": [
+    {
+      "category": "demand_point",
+      "label": "Demand hotspot (PMF plus-code cell)",
+      "fields": ["PLUS_CODE_280", "DELS"],
+      "geometry_types": ["Point"],
+      "inferred": true,
+      "note": "Points carrying USERS/DELS/DEL_BUCKET demand metrics per Plus Code cell."
+    },
+    {
+      "category": "screening_record",
+      "label": "Screening record (contains personal names - excluded from maps and exports)",
+      "fields": ["Screening hubs"],
+      "pii": true
+    },
+    {
+      "category": "competitor_location",
+      "label": "Competitor live location (Snabbit)",
+      "folder_pattern": "(?i)snabbit",
+      "inferred": true,
+      "note": "Folder name 'Snabbit live pluscodes'; Snabbit is listed as a competitor in the hub Competition Intelligence attributes."
+    },
+    {
+      "category": "route_line",
+      "label": "Drawn route / direction line",
+      "geometry_types": ["LineString", "MultiLineString"]
+    },
+    {
+      "category": "route_waypoint",
+      "label": "Directions waypoint",
+      "folder_pattern": "^Directions from",
+      "geometry_types": ["Point"]
+    }
+  ],
+  "clustering_fallback": {
+    "method": "dbscan",
+    "eps_km": 2.0,
+    "min_samples": 3,
+    "_doc": "Used only when hubs carry no cluster attribute and no cluster boundary polygons exist."
+  },
+  "quality": {
+    "duplicate_location_threshold_m": 10,
+    "isolation_threshold_km": 3.0
+  }
+}
